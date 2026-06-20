@@ -1,0 +1,62 @@
+# theHAWG-BIGDAWG Context OS Synthesis
+
+> Synthesis doc — the 5% that answers 95% of questions about this system
+
+---
+
+## What This Is
+
+A GTM engineering Context OS built around [[thehog-ai-company]]'s enrichment API. The system automates a 90-day GTM experiment: discover prospects → enrich data → score accounts → send targeted outbound.
+
+## Architecture
+
+Two layers per [[context-os-architecture]]:
+
+| Layer | Path | Purpose |
+|-------|------|---------|
+| **Knowledge Graph** | `knowledge_base/` | Atomic concepts — company, API, ICPs, methodology |
+| **Operational Docs** | `00_foundation/` | Scoring engine, playbooks, battlecards, monitors |
+
+Operating loop: [[sense-orient-act-deposit]] — every task reads state, orients on hubs, acts, deposits results.
+
+## Key Nodes (Hub Concepts)
+
+| Node | Domain | Links | Role |
+|------|--------|-------|------|
+| [[gtm-engineering]] | methodology | 7 | Core thesis — engineering applied to GTM |
+| [[thehog-ai-company]] | business | 5 | The platform powering the experiment |
+| [[icp-segmentation]] | business | 6 | How targets are identified and bucketed |
+| [[thehog-ai-api]] | technical | 5 | The technical interface to Hog data |
+| [[sense-orient-act-deposit]] | methodology | 5 | The operating protocol |
+
+## ICP Segments
+
+| Segment | Node | Key Signal | Template Track |
+|---------|------|------------|----------------|
+| Solo Founder | [[icp-founder-solo]] | Pre-seed/seed, <10 headcount | Founder-Fast |
+| GTM Engineer | [[icp-gtm-engineer]] | Uses Clay/Apollo, hires for GTM | Technical Depth |
+| RevOps Head | [[icp-revops-head]] | 3+ enrichment vendors, 50+ headcount | ROI / Consolidation |
+
+## Current Status
+
+| Phase | Timeline | Status |
+|-------|----------|--------|
+| Foundation | Days 1–30 | **IN PROGRESS** — knowledge graph seeded, scoring designed |
+| Execution | Days 31–60 | Not started |
+| Scale | Days 61–90 | Not started |
+
+Per [[thirty-sixty-ninety-plan]].
+
+## What's Missing (see findings.md)
+
+Critical gaps that block progress from Phase 1 → Phase 2:
+1. No live API call executed — all data is from docs, not production
+2. Scoring weights are theoretical — need real enrichment data to calibrate
+3. Outbound templates untested — no A/B framework
+4. Competitive match rate data is estimated, not measured
+5. MCP endpoint not tested end-to-end
+
+---
+
+**Last updated:** 2026-06-20
+**References:** [[gtm-engineering]] · [[thirty-sixty-ninety-plan]] · [[context-os-architecture]] · [[thehog-ai-company]]

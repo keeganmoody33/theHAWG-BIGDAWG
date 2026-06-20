@@ -1,0 +1,61 @@
+# theHAWG-BIGDAWG Taxonomy
+# Blessed tags for the knowledge graph. Add new tags only after 3+ nodes demonstrate need.
+
+domains:
+  - technical       # API, enrichment, metering, MCP, infrastructure
+  - business        # Company, ICP, segmentation, pricing, positioning
+  - methodology     # Frameworks, protocols, architecture, operating loops
+  - emergent        # New concepts not yet validated
+
+node_types:
+  - concept         # Atomic idea or definition
+  - pattern         # Reusable workflow or approach
+  - case-study      # Real-world application or persona profile
+  - framework       # Structured model with components
+
+status_values:
+  - emergent        # New — not yet validated in practice
+  - validated       # Confirmed by 2+ real-world citations
+  - canonical       # Foundational — widely linked, core to the system
+
+tags:
+  # Business tags
+  - company-profile
+  - icp
+  - persona
+  - segmentation
+  - lead-scoring
+  - founder
+  - gtm-engineer
+  - revops
+  - pricing
+
+  # Technical tags
+  - api
+  - data-enrichment
+  - rest
+  - mcp
+  - agent-tooling
+  - protocol
+  - enrichment
+  - api-patterns
+  - batch-processing
+  - metering
+  - api-operations
+  - search
+  - prospecting
+
+  # Methodology tags
+  - gtm
+  - engineering
+  - pipeline
+  - operating-loop
+  - context-os
+  - workflow
+  - execution
+  - milestones
+  - timeline
+  - agent-skills
+  - automation
+  - architecture
+  - knowledge-graph
