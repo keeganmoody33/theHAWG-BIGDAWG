@@ -1,3 +1,8 @@
+---
+name: thehawg-bigdawg
+description: Operate and validate theHAWG-BIGDAWG Context OS vault for TheHog.ai GTM engineering. Use when updating docs, knowledge graph nodes, MCP/API deposits, or vault validation workflows.
+---
+
 # theHAWG-BIGDAWG Skill
 
 ## Purpose
@@ -82,3 +87,65 @@ Do not hardcode credentials. Do not paste credentials into prompts or markdown.
 - Never run credit-heavy jobs without explicit intent.
 - Never overwrite existing graph facts without preserving provenance.
 - Never skip the DEPOSIT step after discovering reusable information.
+
+## Testing and validation
+
+Use shell-only validation for docs/vault PRs. Recording is usually not useful unless the test involves Obsidian or another GUI.
+
+Before execution:
+
+1. Confirm no login is required for markdown-only validation.
+2. Check repo-scoped secrets without printing values. Live MCP/API tests need the secrets listed below; markdown graph validation does not.
+3. Read the changed files with line numbers and identify the exact graph links or deposited facts being tested.
+4. Check PR comments and CI before executing tests.
+
+Recommended markdown graph validation:
+
+```bash
+python3 - <<'PY'
+import re
+from pathlib import Path
+root = Path('/home/ubuntu/repos/theHAWG-BIGDAWG')
+mds = [p for p in root.rglob('*.md') if '.git' not in p.parts]
+slugs = {p.stem for p in mds}
+missing = []
+for p in mds:
+    text = p.read_text()
+    for raw in re.findall(r'\[\[([^\]|#]+)', text):
+        if raw not in slugs:
+            missing.append((p.relative_to(root).as_posix(), raw))
+if missing:
+    for path, raw in missing:
+        print(f'Missing wiki target: {path}: [[{raw}]]')
+    raise SystemExit(1)
+print(f'Wiki-link validation passed: {len(mds)} markdown files, 0 missing targets')
+PY
+```
+
+Recommended knowledge-base frontmatter validation:
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+root = Path('/home/ubuntu/repos/theHAWG-BIGDAWG')
+missing = []
+for p in sorted((root / 'knowledge_base').glob('*.md')):
+    text = p.read_text()
+    if not text.startswith('---\n') or '\n---\n' not in text[4:]:
+        missing.append(p.relative_to(root).as_posix())
+if missing:
+    print('\n'.join(missing))
+    raise SystemExit(1)
+print('Knowledge-base frontmatter validation passed')
+PY
+```
+
+For a docs-only PR, also verify exact required strings with `grep -F` so a generic link check cannot pass if the core synthesis was omitted.
+
+## Devin Secrets Needed
+
+- `THEHOG_ACCESS_KEY` — only for live Hog.ai API/MCP ingestion tests.
+- `THEHOG_SECRET_KEY` — only for live Hog.ai API/MCP ingestion tests.
+- `THEHOG_MCP_URL` — only for live Hog.ai MCP connectivity tests.
+- No secrets are needed for markdown graph validation, frontmatter checks, or docs-only PR testing.
+
