@@ -1,0 +1,37 @@
+# theHAWG-BIGDAWG Ontology
+# Defines how concepts relate and linking rules for graph health.
+
+relationship_types:
+  enables:
+    description: "Source concept makes target concept possible"
+    example: "[[thehog-ai-api]] enables [[hog-api-enrichment]]"
+  
+  supports:
+    description: "Source concept provides evidence or infrastructure for target"
+    example: "[[hog-api-metering]] supports [[monitor-library]]"
+  
+  implements:
+    description: "Source concept is a concrete realization of target"
+    example: "[[icp-scoring-engine]] implements [[icp-segmentation]]"
+  
+  composes:
+    description: "Source concept is built from / references target concepts"
+    example: "outbound-playbook composes from [[icp-segmentation]] + [[competitive-battlecards]]"
+  
+  segments:
+    description: "Source concept is a specific instance of target category"
+    example: "[[icp-founder-solo]] segments [[icp-segmentation]]"
+  
+  feeds:
+    description: "Output of source flows into input of target"
+    example: "[[hog-api-search]] feeds [[hog-api-enrichment]]"
+
+linking_rules:
+  minimum_outbound: 2    # Every node must link to at least 2 other nodes
+  minimum_inbound: 1     # Every node should be linked from at least 1 other node
+  orphan_threshold: 0    # Zero orphans target — orphan nodes are wasted knowledge
+
+quality_thresholds:
+  link_density_target: 3.0    # Average links per node (outbound)
+  hub_threshold: 5            # Nodes with 5+ total links are hubs
+  island_detection: true      # Flag disconnected subgraphs

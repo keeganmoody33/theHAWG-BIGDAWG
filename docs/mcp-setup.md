@@ -83,7 +83,7 @@ Run exactly one low-cost read-only test:
 
 1. `companies/search` for `TheHog.ai` or `Hog.ai`.
 2. Poll the returned operation until completion.
-3. Capture operation metadata, metering, and relevant company facts in `findings.md`.
-4. Update `knowledge_base/thehog-ai-company.md`.
+3. Capture operation metadata, metering, and relevant company facts in `plans/findings.md`.
+4. Update `knowledge_base/business/thehog-ai-company.md`.
 
 Do not run broad people searches, enrichment, monitors, or deep research until rate limits and credit costs are confirmed.
