@@ -1,6 +1,6 @@
 # Graph Health Audit & Findings
 
-> Last audited: 2026-06-20
+> Last audited: 2026-06-21
 > Auditor: Devin (acting as Jacob Deedlewood's Context OS patterns)
 
 ---
@@ -9,7 +9,7 @@
 
 | Metric | Value | Target | Status |
 |--------|-------|--------|--------|
-| Total knowledge nodes | 17 | — | Baseline (added 2 person nodes) |
+| Total knowledge nodes | 17 | — | Baseline (15 concept + 2 person nodes) |
 | Total operational docs | 6 | — | Baseline |
 | Orphan nodes | 0 | 0 | PASS |
 | Average outbound links | ~4.5 | 3.0 | PASS |
@@ -36,7 +36,7 @@
 
 | # | Gap | Type | Impact | Resolution |
 |---|-----|------|--------|------------|
-| G1 | **No live API data** — all nodes built from docs, not production responses | TRUE GAP | Cannot validate scoring weights without real enrichment data | Execute safe test: `POST /api/v1/companies/search` for "TheHog.ai" limit 3 |
+| G1 | ~~**No live API data**~~ **RESOLVED 2026-06-21.** Executed web_search, x_keyword, linkedin_keyword, people/search, companies/search. Used API to self-discover and enrich founder profiles. | ~~TRUE GAP~~ RESOLVED | API connectivity confirmed. Person nodes enriched with social links, press, education, Crunchbase data. | Completed |
 | G2 | **Scoring weights untested** — icp-scoring-engine.md weights are theoretical | TRUE GAP | Outbound will target wrong accounts if weights are wrong | Score 25+ real accounts, compare manual ranking vs. algorithmic |
 | G3 | **No account data nodes** — `knowledge_base/business/accounts-*.md` doesn't exist yet | TRUE GAP | No concrete prospect data in the graph | Run first ICP search, deposit results |
 
@@ -67,12 +67,16 @@
 
 ```
 COMPANY & PRODUCT
-  [[thehog-ai-company]]          ✓ validated
+  [[thehog-ai-company]]          ✓ validated (API-enriched: social handles, press)
   [[thehog-ai-api]]              ✓ validated
   [[hog-api-enrichment]]         ✓ validated
   [[hog-api-metering]]           ✓ validated
   [[hog-api-search]]             ✓ validated
   [[mcp-integration]]            ✓ validated
+
+PEOPLE (added 2026-06-20, enriched 2026-06-21 via Hog API)
+  [[hudson-liao]]                ✓ validated (API-enriched: LinkedIn, X, IG, press, community org)
+  [[paulo-nascimento]]           ✓ validated (API-enriched: CTO title, GitHub, UW CS, Substack)
 
 ICP & SEGMENTS
   [[icp-segmentation]]           ✓ validated
@@ -116,7 +120,7 @@ PROCESS & LEARNINGS (WILL EMERGE)
 
 ## Next Actions (Priority Order)
 
-1. **Execute safe test API call** → validate connectivity, capture response shape
+1. ~~**Execute safe test API call**~~ → **DONE (2026-06-21)**. Confirmed: web_search, x_keyword, linkedin_keyword, people/search, companies/search all operational.
 2. **Run first ICP search** → 25 accounts for GTM engineering wedge
 3. **Score results** → apply icp-scoring-engine.md weights to real data
 4. **Deposit scored accounts** → create `knowledge_base/business/accounts-gtm-engineering-wedge.md`
@@ -126,5 +130,5 @@ PROCESS & LEARNINGS (WILL EMERGE)
 
 ---
 
-**Last updated:** 2026-06-20
-**References:** [[gtm-engineering]] · [[thirty-sixty-ninety-plan]] · [[context-os-architecture]]
+**Last updated:** 2026-06-21
+**References:** [[gtm-engineering]] · [[thirty-sixty-ninety-plan]] · [[context-os-architecture]] · [[hudson-liao]] · [[paulo-nascimento]]
