@@ -1,6 +1,11 @@
-# Three Customer Onboarding Sessions
+# TheHog.ai: Three Customer Onboarding Sessions
 
 What follows is a realistic simulation of three distinct customers — different environments, different technical comfort levels, different GTM contexts — each going through their **first three sessions** with TheHog.ai. Every action, confusion point, and discovery moment is grounded in the actual documented behavior of the product.
+
+## Related Workspace Docs
+
+- [API Reference & Feature Map](./thehog-api-reference.md) — endpoint-by-endpoint capability reference.
+- [30-60-90 Day Playbook](./30-60-90-playbook.md) — founding GTM engineer execution plan.
 
 ***
 

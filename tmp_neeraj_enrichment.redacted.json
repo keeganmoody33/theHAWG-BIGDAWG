@@ -1,0 +1,6 @@
+{
+  "endpoint": "/api/enrichments",
+  "error": "Bad Request",
+  "http_status": 400,
+  "message": "Validation failed"
+}

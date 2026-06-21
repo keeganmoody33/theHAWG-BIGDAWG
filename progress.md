@@ -6,14 +6,19 @@
 - Phase 2 configuration scaffolding implemented without live API calls.
 - Context7 hardening complete against `/websites/thehog_ai` docs.
 - Canonical local MCP env vars are `THEHOG_ACCESS_KEY`, `THEHOG_SECRET_KEY`, and `THEHOG_MCP_URL`.
-- First safe ingestion attempted with a low-limit company search; API returned `401 Unauthorized`.
-- `.env.example` has been restored to placeholders; real credentials should live only in gitignored `.env`.
-- First successful ingestion remains pending until credentials are rotated/activated and authentication succeeds.
+- First live API call succeeded with `202 Accepted` and polled to `succeeded` for `POST /api/v1/companies/search`.
+- Query `TheHog.ai` returned `0` companies; operation ID `6d04edfd-41a1-4330-8202-83bd5e2d6f43` was recorded.
+- `.env` holds real credentials with `600` permissions and is gitignored; `.env.example` is clean placeholders.
+- Split-query GTM wedge search produced actionable accounts: `companies using Clay` → 10 accounts; `companies using Apollo` → 9 accounts.
+- People search surfaced Neeraj Kumar, Director of GTM Engineering at FullFunnel.
+- Deep-research on FullFunnel produced a personalized outbound angle and identified FullFunnel as a Top 4 global Clay Elite Studio Partner.
+- First outbound packet is deposited for FullFunnel → Neeraj Kumar.
 
 ## Next actions
 
-1. Rotate or activate TheHog credentials in the dashboard because the current first attempt returned `401 Unauthorized`.
-2. Store new values only in gitignored `.env` using `THEHOG_ACCESS_KEY` and `THEHOG_SECRET_KEY`.
-3. Retry one read-only `POST /api/v1/companies/search` for TheHog.ai with a low `limit`.
-4. Deposit the result, operation ID, confidence, and metering into `knowledge_base/thehog-ai-company.md`.
-5. Update `findings.md` with the source, timestamp, confidence, and credit metadata.
+1. Run `enrichment` on Neeraj Kumar to test contact data quality and credit visibility.
+2. Store the FullFunnel outbound packet in a campaign folder if multi-account sequences are built.
+3. Run another `companies/search` for a second wedge (e.g., `AI SDR companies` or `product-led sales platforms`) to expand the account list.
+4. Continue checking the complex GTM wedge operation `27cea29e-e48b-49f0-9eeb-ca850c79d604` when time permits.
+5. Capture metering and cost in each deposit.
+6. Update `findings.md` with the GTM wedge source and confidence.

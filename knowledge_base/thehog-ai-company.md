@@ -28,6 +28,23 @@ source_docs:
 - Confirm credit cost for company search, people search, enrichment, monitors, and deep research.
 - Confirm whether the repository should remain public once live GTM data is added.
 
+## Live API verification
+
+- **Date:** 2026-06-20
+- **Endpoint:** `POST /api/v1/companies/search`
+- **Query:** `TheHog.ai`
+- **Limit:** `3`
+- **Operation ID:** `6d04edfd-41a1-4330-8202-83bd5e2d6f43`
+- **Poll URL:** `/api/operations/6d04edfd-41a1-4330-8202-83bd5e2d6f43`
+- **Initial status:** `queued`
+- **Final status:** `succeeded` after 5 poll attempts (progress `100`)
+- **Companies returned:** `0`
+- **Metering:** none provided in response
+- **Cost:** none provided in response
+- **Confidence:** high (direct API call, but no matching company records found)
+- **Interpretation:** TheHog.ai likely does not index itself as a target company record, or the query is too literal/self-referential. A broader search term (`AI GTM platform`, `GTM intelligence API`) should be tested next.
+- **Source:** `docs.thehog.ai` API via `developer.thehog.ai` (live call)
+
 ## Links
 
 - [[thehog-ai-api]]

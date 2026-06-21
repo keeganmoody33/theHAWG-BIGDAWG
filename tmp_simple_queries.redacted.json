@@ -1,0 +1,48 @@
+{
+  "3798bcbd-b443-4c40-8f89-f9efeb63319a": {
+    "companies": [
+      {
+        "domain": "salesforce.com",
+        "match_score": null,
+        "name": "Salesforce"
+      },
+      {
+        "domain": "admin.salesforce.com",
+        "match_score": null,
+        "name": "Salesforce Admins"
+      },
+      {
+        "domain": "architect.salesforce.com",
+        "match_score": null,
+        "name": "Salesforce Architects"
+      }
+    ],
+    "companyCount": 3,
+    "cost": null,
+    "finalStatus": "succeeded",
+    "metering": null
+  },
+  "d844f8dd-03ee-4449-8916-201dfb36e413": {
+    "companies": [
+      {
+        "domain": "clay.com",
+        "match_score": null,
+        "name": "Clay"
+      },
+      {
+        "domain": "carebyclay.com",
+        "match_score": null,
+        "name": "Clay (acquired by Kangarootime)"
+      },
+      {
+        "domain": null,
+        "match_score": null,
+        "name": "CLAY TECH"
+      }
+    ],
+    "companyCount": 3,
+    "cost": null,
+    "finalStatus": "succeeded",
+    "metering": null
+  }
+}

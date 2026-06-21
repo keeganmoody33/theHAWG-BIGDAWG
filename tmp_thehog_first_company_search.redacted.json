@@ -1,0 +1,11 @@
+{
+  "companies": [],
+  "companyCount": 0,
+  "cost": null,
+  "error": null,
+  "finalStatus": "succeeded",
+  "metering": null,
+  "operationId": "6d04edfd-41a1-4330-8202-83bd5e2d6f43",
+  "pollUrl": "/api/operations/6d04edfd-41a1-4330-8202-83bd5e2d6f43",
+  "progress": 100
+}

@@ -1,6 +1,12 @@
-# TheHog.ai: Doc Reference, Feature Map & Three-Customer Onboarding Sessions
+# TheHog.ai: API Reference & Feature Map
 
 > *Context7-style doc reference pass — pulled directly from the live docs at `docs.thehog.ai`. All feature descriptions, endpoint signatures, and response shapes are sourced from the actual documentation.*
+
+## Related Workspace Docs
+
+- [Customer Onboarding Sessions](./customer-sessions.md) — three realistic first-time user journeys.
+- [30-60-90 Day Playbook](./30-60-90-playbook.md) — founding GTM engineer execution plan.
+- [MCP Setup Guide](./mcp-setup.md) — connecting Claude / Cursor to the Hog.ai MCP (added in Phase 2).
 
 ***
 
