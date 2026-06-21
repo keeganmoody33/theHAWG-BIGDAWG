@@ -1,0 +1,175 @@
+[
+  {
+    "name": "object_linkedin_url",
+    "http_status": 200,
+    "body": {
+      "data": {
+        "contact": {
+          "email": []
+        }
+      },
+      "meta": {
+        "requestId": "5103a596-2eb6-4988-85a3-b32d8b8b7736"
+      }
+    }
+  },
+  {
+    "name": "object_linkedinUrl",
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:49:52.153Z",
+      "requestId": "09695b2c-eaa6-41e1-a07a-a0017fdda6dc",
+      "errors": [
+        {
+          "property": "",
+          "message": "identifier.property linkedinUrl should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "name": "object_url",
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:49:52.630Z",
+      "requestId": "0d26b688-4c53-4820-9d0a-283d9f7aba6b",
+      "errors": [
+        {
+          "property": "",
+          "message": "identifier.property url should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "name": "object_type_value_linkedin_url",
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:49:53.053Z",
+      "requestId": "9b97bca3-660b-4fc6-8584-694413487f3d",
+      "errors": [
+        {
+          "property": "",
+          "message": "identifier.property type should not exist"
+        },
+        {
+          "property": "",
+          "message": "identifier.property value should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "name": "object_type_value_linkedin",
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:49:53.437Z",
+      "requestId": "c9d2ede1-7eaa-4c6a-8028-aafd0733b868",
+      "errors": [
+        {
+          "property": "",
+          "message": "identifier.property type should not exist"
+        },
+        {
+          "property": "",
+          "message": "identifier.property value should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "name": "object_kind_value",
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:49:53.863Z",
+      "requestId": "6081628c-cdf6-4af0-ad96-648f0bd6d01a",
+      "errors": [
+        {
+          "property": "",
+          "message": "identifier.property kind should not exist"
+        },
+        {
+          "property": "",
+          "message": "identifier.property value should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "name": "object_source_value",
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:49:54.279Z",
+      "requestId": "4e01d591-c21f-436a-8e16-781d76842681",
+      "errors": [
+        {
+          "property": "",
+          "message": "identifier.property source should not exist"
+        },
+        {
+          "property": "",
+          "message": "identifier.property value should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "name": "identifiers_array_object",
+    "http_status": 202,
+    "body": {
+      "id": "3f50c126-1dec-4efd-ae47-b07fc50a7197",
+      "operationId": "3f50c126-1dec-4efd-ae47-b07fc50a7197",
+      "status": "queued",
+      "pollUrl": "/api/enrichments/3f50c126-1dec-4efd-ae47-b07fc50a7197",
+      "meta": {
+        "requestId": "250abb20-300f-4287-8035-4475b3538f35"
+      }
+    }
+  },
+  {
+    "name": "identifiers_array_type_value",
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:49:55.256Z",
+      "requestId": "1b2f3508-8d60-4703-818d-42b6a5faa602",
+      "errors": [
+        {
+          "property": "",
+          "message": "identifiers.0.property type should not exist"
+        },
+        {
+          "property": "",
+          "message": "identifiers.0.property value should not exist"
+        }
+      ]
+    }
+  }
+]
