@@ -36,7 +36,7 @@ def monitor_credits(response):
     log_credit_usage(charged, actual_cost)
     
     # Budget guardrail
-    if cumulative_credits > DAILY_BUDGET:
+    if cumulative_credits > DAILY_MAX:
         halt_pipeline("Daily credit budget exceeded")
         alert_operator()
 ```

@@ -28,7 +28,7 @@ source:
 
 # Hog API Metering
 
-TheHog.ai uses a credit-based metering model with full transparency — every API response includes cost fields so callers can track spend in real time and implement budget guardrails in their [[gtm-engineering]] workflows.
+TheHog.ai uses a credit-based metering model with transparency — API responses may include cost fields so callers can track spend in real time and implement budget guardrails in their [[gtm-engineering]] workflows. These fields are present on enrichment and search responses but may be absent on some operation types — always use safe access (`.get()`) with fallback defaults.
 
 The metering system is critical for production usage: without monitoring `creditsCharged`, a batch enrichment loop can exhaust credits silently. The stop conditions (`402`, `429`) are the hard circuit breakers the API enforces.
 

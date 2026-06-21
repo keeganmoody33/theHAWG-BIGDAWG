@@ -38,13 +38,13 @@ This repo is structured as a **Context OS** — a two-layer knowledge architectu
 | `00_foundation/_synthesis/` | Summary documents |
 | `docs/` | Source reference docs and MCP setup instructions |
 | `plans/` | Current task plan and backlog |
-| `findings.md` | Session findings and ingestion notes |
+| `plans/findings.md` | Graph health audit, gap analysis, and session findings |
 | `progress.md` | Current status and next actions |
 
 ### Operating Loop
 
 1. **SENSE:** Read existing docs and nodes before acting.
-2. **ORIENT:** Decide whether new facts belong in `knowledge_base/`, `00_foundation/`, `findings.md`, or `progress.md`.
+2. **ORIENT:** Decide whether new facts belong in `knowledge_base/`, `00_foundation/`, `plans/findings.md`, or `progress.md`.
 3. **ACT:** Use Hog.ai MCP/API only when fresh data is needed.
 4. **DEPOSIT:** Preserve reusable facts with source, timestamp, confidence, and wiki-links.
 

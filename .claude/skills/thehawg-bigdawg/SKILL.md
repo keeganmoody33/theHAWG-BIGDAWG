@@ -62,7 +62,7 @@ Before any action, verify current state:
 4. **Pick the owner document:**
    - Atomic company/product/persona facts → `knowledge_base/`
    - Strategy, scoring, playbooks, reusable systems → `00_foundation/`
-   - Session observations → `findings.md`
+   - Session observations → `plans/findings.md`
    - Status and next steps → `progress.md`
 
 ### ACT — Execute the Task
@@ -87,7 +87,7 @@ Before any action, verify current state:
 **Every action must produce a deposit:**
 
 1. Create or update knowledge node with proper frontmatter
-2. Link to at least 2 existing nodes via `[[wiki-links]]`
+2. Link to at least 2 existing nodes via wiki-links (e.g. `[[gtm-engineering]]`)
 3. Update `plans/findings.md` if gaps are discovered
 4. Update synthesis doc if material state changes
 
@@ -121,8 +121,8 @@ Do not hardcode credentials. Do not paste credentials into prompts or markdown.
 
 1. Run `companies/search` for `TheHog.ai` or `Hog.ai`.
 2. Poll until terminal state.
-3. Add confirmed facts to `knowledge_base/thehog-ai-company.md`.
-4. Log operation metadata and summary in `findings.md`.
+3. Add confirmed facts to `knowledge_base/business/thehog-ai-company.md`.
+4. Log operation metadata and summary in `plans/findings.md`.
 5. Update `progress.md`.
 
 ## Quality Gates
@@ -142,7 +142,7 @@ Do not hardcode credentials. Do not paste credentials into prompts or markdown.
 | "run outbound" | Read scored accounts → Select templates → Generate outbound |
 | "competitive intel" | Read battlecards → Research → Update → Deposit |
 | "graph health" | Run graph-exec health queries → Report → Fix orphans |
-| "what's missing" | Read findings.md → Run gap analysis → Update |
+| "what's missing" | Read plans/findings.md → Run gap analysis → Update |
 
 ## Never Do
 

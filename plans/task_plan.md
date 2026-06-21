@@ -2,10 +2,10 @@
 
 ## Operating loop
 
-1. SENSE: read `README.md`, `findings.md`, `progress.md`, `docs/`, `knowledge_base/`, and `00_foundation/` before acting.
+1. SENSE: read `README.md`, `plans/findings.md`, `progress.md`, `docs/`, `knowledge_base/`, and `00_foundation/` before acting.
 2. ORIENT: identify the exact node or foundation doc that owns the work.
 3. ACT: use Hog.ai MCP/API calls only when the task requires fresh data.
-4. DEPOSIT: write atomic facts into `knowledge_base/`, synthesis into `00_foundation/`, and session updates into `findings.md` and `progress.md`.
+4. DEPOSIT: write atomic facts into `knowledge_base/`, synthesis into `00_foundation/`, and session updates into `plans/findings.md` and `progress.md`.
 
 ## Immediate backlog
 

@@ -151,7 +151,7 @@ status: active
 
 ## Links
 
-- [[thehog-api-validation]]
+- [[thehog-ai-api]]
 - [[thehog-ai-company]]
 - [[outbound-playbook]]
-- [[thehog-ai-icp-segments]]
+- [[icp-segmentation]]

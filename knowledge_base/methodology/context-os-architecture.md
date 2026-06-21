@@ -31,7 +31,7 @@ source:
 
 # Context OS Architecture
 
-The Context OS is a two-layer knowledge architecture where AI compounds intelligence over time. Layer 1 (knowledge_base/) holds atomic, reusable concepts linked via wiki-links (e.g. `[[node-name]]`). Layer 2 (00_foundation/) holds operational documents that compose from the graph — they reference atomic concepts, they don't redefine them.
+The Context OS is a two-layer knowledge architecture where AI compounds intelligence over time. Layer 1 (knowledge_base/) holds atomic, reusable concepts linked via wiki-links (e.g. `[[gtm-engineering]]`). Layer 2 (00_foundation/) holds operational documents that compose from the graph — they reference atomic concepts, they don't redefine them.
 
 Coordination is stigmergic: agents read and modify the shared environment rather than following rigid procedures. Knowledge compounds through use — the more a node is linked and referenced, the more canonical it becomes.
 
@@ -40,7 +40,7 @@ Coordination is stigmergic: agents read and modify the shared environment rather
 - **Layer 1: Knowledge Graph** (`knowledge_base/`) — atomic concepts with frontmatter metadata
   - Domains: `technical/`, `business/`, `methodology/`, `emergent/`
   - Lifecycle: `emergent` → `validated` (2+ citations) → `canonical`
-  - Linked via wiki-links (e.g. `[[node-name]]`) — the graph has structure, not just files
+  - Linked via wiki-links (e.g. `[[thehog-ai-api]]`) — the graph has structure, not just files
   
 - **Layer 2: Operational Docs** (`00_foundation/`) — strategic artifacts
   - Compose FROM the graph — reference atomic concepts via wiki-links

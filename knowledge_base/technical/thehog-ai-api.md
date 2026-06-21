@@ -34,7 +34,7 @@ source:
 
 The TheHog.ai API is a REST interface providing company and people data for GTM workflows. It exposes three primary capabilities: search, enrichment, and batch processing. Authentication uses dual-header credentials — `X-Access-Key` and `X-Secret-Key` — sourced from the Credentials page in the dashboard. Canonical env var names: `THEHOG_ACCESS_KEY` and `THEHOG_SECRET_KEY`.
 
-The API follows a metering-first design — every response includes `metering.creditsCharged` and `metering.estimatedMaxCredits` so callers can track spend in real time. Rate limiting returns `429 Too Many Requests`; payment issues return `402 Payment Required`. Both are stop conditions for batch workflows.
+The API follows a metering-first design — responses may include `metering.creditsCharged` and `metering.estimatedMaxCredits` so callers can track spend in real time. These fields are present on enrichment and search responses but may be absent on some operation types — always use safe access with fallback defaults. Rate limiting returns `429 Too Many Requests`; payment issues return `402 Payment Required`. Both are stop conditions for batch workflows.
 
 ## Key Points
 

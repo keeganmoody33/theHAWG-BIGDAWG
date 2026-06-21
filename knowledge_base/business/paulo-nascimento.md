@@ -29,7 +29,7 @@ social:
   linkedin: "https://linkedin.com/in/paulonasc"
   x: "https://x.com/paulodoestech"
   github: "https://github.com/paulonasc"
-  substack: "https://paulonasc.com"
+  website: "https://paulonasc.com"
 source:
   type: document
   file: "Y Combinator + Hog API (web_search) + Crunchbase + GitHub"
