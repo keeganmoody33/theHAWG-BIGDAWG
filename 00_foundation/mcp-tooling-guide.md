@@ -4,6 +4,8 @@
 
 The Hog.ai MCP is the ingestion engine for this Context OS. It should be used to gather fresh company, people, market, and signal data, then deposit durable facts into the graph.
 
+It is also the canonical agent interface: users should be able to state intent while agents choose tools, execute API workflows, poll async operations, and return structured action packets.
+
 ## Required behavior
 
 - Read local MCP credentials from `THEHOG_ACCESS_KEY`, `THEHOG_SECRET_KEY`, and `THEHOG_MCP_URL`.
@@ -16,6 +18,8 @@ The Hog.ai MCP is the ingestion engine for this Context OS. It should be used to
 - Treat `402 Payment Required` and `429 Too Many Requests` as stop conditions.
 - Use backoff for polling.
 - Deposit facts with source, date, confidence, metering, and linked nodes.
+- Translate user goals into endpoint plans rather than asking the user to choose between API operations.
+- Keep user approval boundaries explicit for enrichment, monitors, recurring work, and any credit-heavy action.
 
 ## Safe first calls
 
@@ -50,3 +54,4 @@ metering:
 
 - [[thehog-ai-api]]
 - [[thehog-ai-company]]
+- [[agent-interface-contract]]
