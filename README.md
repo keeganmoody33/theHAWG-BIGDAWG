@@ -4,7 +4,7 @@ Self-referential GTM engineering workspace for TheHog.ai. This repo is a living 
 
 ## Context OS
 
-This repo is structured as a **Context OS** — a two-layer knowledge architecture where AI compounds intelligence over time. Agents navigate via `[[wiki-links]]` across a knowledge graph of atomic concepts.
+This repo is structured as a **Context OS** — a two-layer knowledge architecture where AI compounds intelligence over time. Agents navigate via wiki-links across a knowledge graph of atomic concepts.
 
 ### Quick Start
 
@@ -15,7 +15,7 @@ This repo is structured as a **Context OS** — a two-layer knowledge architectu
 ### First-read order
 
 1. `progress.md`
-2. `findings.md`
+2. `plans/findings.md`
 3. `plans/task_plan.md`
 4. `docs/mcp-setup.md`
 5. `docs/thehog-api-reference.md`

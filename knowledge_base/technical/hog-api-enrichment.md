@@ -36,11 +36,15 @@ Two modes exist: **single enrichment** (sync, immediate response) and **batch en
 
 ## Key Points
 
-- Single enrichment: `POST /api/v1/enrich` with `sync=true` for immediate results
-- Batch enrichment: Submit array of identifiers, receive job ID, poll for terminal state
+- Contact enrichment: `POST /api/enrichments` — single or batch (up to 100 identifiers)
+- Supported identifiers: `linkedin_url`, `email`, `x_handle`, `github_username`
+- Required `fields`: `contact.email`, `contact.phone`, optionally `signals`
+- Two-mode response: `200 OK` (sync, data present immediately) or `202 Accepted` (async, poll for results)
 - Terminal states: `succeeded`, `failed`, `partial_success`, `cancelled`
 - Batch limit: 100 identifiers per request
+- Response includes `emailStatus`, `phoneStatus`, `emails[]` with `isVerified`, `phoneNumbers[]` with `phoneType`, `fromCache`
 - Each response includes metering fields for credit tracking (see [[hog-api-metering]])
+- `402 Payment Required` means insufficient credits — no credits deducted
 - Failed identifiers in a batch return `partial_success` — not a full failure
 
 ## Evidence
@@ -58,5 +62,4 @@ Two modes exist: **single enrichment** (sync, immediate response) and **batch en
 
 ---
 
-**Status:** Validated — patterns confirmed via Context7 corrections
-**Next:** Run batch enrichment on first ICP search results to validate end-to-end flow
+**Status:** Validated — endpoint confirmed as `POST /api/enrichments` per API reference docs

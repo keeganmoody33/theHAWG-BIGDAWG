@@ -15,7 +15,7 @@ Operate the GTM engineering loop for TheHog.ai using the Context OS knowledge gr
 
 1. `README.md`
 2. `progress.md`
-3. `findings.md`
+3. `plans/findings.md`
 4. `plans/task_plan.md`
 5. `docs/mcp-setup.md`
 6. `docs/thehog-api-reference.md`

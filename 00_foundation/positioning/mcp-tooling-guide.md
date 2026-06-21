@@ -55,10 +55,11 @@ Once connected, agents can discover these tools via the MCP protocol:
 | Tool | Maps to API | Purpose |
 |------|-------------|---------|
 | `search_companies` | `POST /api/v1/companies/search` | Find companies by criteria |
-| `search_people` | `POST /api/v1/search` | Find people by criteria |
-| `enrich_company` | `POST /api/v1/enrich` | Enrich a single company |
-| `enrich_batch` | `POST /api/v1/enrich/batch` | Batch enrich up to 100 |
-| `check_credits` | `GET /api/v1/metering` | Check remaining credits |
+| `search_people` | `POST /api/v1/people/search` | Find people by criteria |
+| `enrich_contact` | `POST /api/enrichments` | Enrich single or batch (up to 100) |
+| `search` | `POST /api/v1/search` | Multi-platform search (web, social) |
+| `deep_research` | `POST /api/deep-research` | LLM-powered research with JSON Schema |
+| `monitors` | `POST /api/v1/monitors` | Recurring social/web monitors |
 
 ---
 

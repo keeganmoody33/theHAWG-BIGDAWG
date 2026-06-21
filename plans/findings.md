@@ -95,8 +95,8 @@ METHODOLOGY
 ### What We're Missing
 
 ```
-ACCOUNTS & PIPELINE (TRUE GAP — needs API calls)
-  accounts-gtm-engineering-wedge.md    ✗ not created
+ACCOUNTS & PIPELINE (PARTIAL — some created via API calls)
+  accounts-gtm-engineering-wedge.md    ✓ created (live API data deposited)
   accounts-revops-consolidation.md     ✗ not created
   accounts-founder-pipeline.md         ✗ not created
 

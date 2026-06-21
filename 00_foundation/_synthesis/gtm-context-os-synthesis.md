@@ -34,7 +34,7 @@ Operating loop: [[sense-orient-act-deposit]] — every task reads state, orients
 | Person | Role | Owns |
 |--------|------|------|
 | [[hudson-liao]] | CEO & Co-founder | GTM strategy, product vision, growth ops |
-| [[paulo-nascimento]] | Co-founder | AI engineering, API architecture, MCP |
+| [[paulo-nascimento]] | Co-founder & CTO | AI engineering, API architecture, MCP |
 
 YC F25 batch. 2 employees as of last check.
 
@@ -56,10 +56,10 @@ YC F25 batch. 2 employees as of last check.
 
 Per [[thirty-sixty-ninety-plan]].
 
-## What's Missing (see findings.md)
+## What's Missing (see plans/findings.md)
 
-Critical gaps that block progress from Phase 1 → Phase 2:
-1. No live API call executed — all data is from docs, not production
+Progress since initial build:
+1. ~~No live API call executed~~ — **RESOLVED.** Live API calls confirmed: `web_search`, `x_keyword`, `linkedin_keyword`, `people/search`, `companies/search`. Founder nodes enriched via Hog API self-discovery.
 2. Scoring weights are theoretical — need real enrichment data to calibrate
 3. Outbound templates untested — no A/B framework
 4. Competitive match rate data is estimated, not measured

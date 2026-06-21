@@ -32,18 +32,21 @@ source:
 
 # TheHog.ai API
 
-The TheHog.ai API is a REST interface providing company and people data for GTM workflows. It exposes three primary capabilities: search, enrichment, and batch processing. Authentication uses access key + secret key pairs via environment variables `THEHOG_ACCESS_KEY` and `THEHOG_SECRET_KEY`.
+The TheHog.ai API is a REST interface providing company and people data for GTM workflows. It exposes three primary capabilities: search, enrichment, and batch processing. Authentication uses dual-header credentials — `X-Access-Key` and `X-Secret-Key` — sourced from the Credentials page in the dashboard. Canonical env var names: `THEHOG_ACCESS_KEY` and `THEHOG_SECRET_KEY`.
 
 The API follows a metering-first design — every response includes `metering.creditsCharged` and `metering.estimatedMaxCredits` so callers can track spend in real time. Rate limiting returns `429 Too Many Requests`; payment issues return `402 Payment Required`. Both are stop conditions for batch workflows.
 
 ## Key Points
 
-- **Base URL:** `api.thehog.ai`
-- **Auth:** `THEHOG_ACCESS_KEY` + `THEHOG_SECRET_KEY` (canonical env var names)
-- **Search:** `POST /api/v1/search` — supports `sync=true` for immediate results
-- **Companies:** `POST /api/v1/companies/search` — company lookup by domain/name
-- **Batch:** Up to 100 identifiers per request, async by default
-- **Async states:** `succeeded`, `failed`, `partial_success`, `cancelled`
+- **Base URL:** `https://developer.thehog.ai`
+- **Auth headers:** `X-Access-Key` + `X-Secret-Key` (env vars: `THEHOG_ACCESS_KEY`, `THEHOG_SECRET_KEY`)
+- **Companies:** `POST /api/v1/companies/search` — company lookup by domain/name (async, returns `202` + `pollUrl`)
+- **People:** `POST /api/v1/people/search` — contact discovery scoped to company
+- **Enrichment:** `POST /api/enrichments` — single or batch (up to 100), returns `200` or `202`
+- **Search:** `POST /api/v1/search` — multi-platform search, supports `sync=true`
+- **Deep Research:** `POST /api/deep-research` — LLM-powered research with JSON Schema output
+- **Monitors:** `POST /api/v1/monitors` — recurring social/web monitors
+- **Async polling:** `GET /api/operations/:id` — states: `succeeded`, `failed`, `partial_success`, `cancelled`
 - **Metering:** `metering.creditsCharged`, `metering.estimatedMaxCredits`, `meta.cost.estimated`, `meta.cost.actual`
 
 ## Evidence
@@ -65,5 +68,5 @@ The API follows a metering-first design — every response includes `metering.cr
 
 ---
 
-**Status:** Validated — endpoint structure confirmed via Context7 library
-**Next:** Execute safe test call (`POST /api/v1/companies/search` for "TheHog.ai" limit 3)
+**Status:** Validated — endpoint structure confirmed via API reference docs + live API calls
+**API calls confirmed working:** `web_search`, `x_keyword`, `linkedin_keyword`, `people/search`, `companies/search`
