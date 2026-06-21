@@ -9,9 +9,10 @@
 
 | Metric | Value | Target | Status |
 |--------|-------|--------|--------|
-| Total knowledge nodes | 17 | — | Baseline (15 concept + 2 person nodes) |
+| Total knowledge nodes | 18 | — | Baseline (15 concept + 2 person + 1 account node) |
 | Total operational docs (00_foundation/) | 6 | — | Baseline (scoring, outbound, battlecards, MCP guide, monitors, synthesis) |
 | Orphan nodes | 0 | 0 | PASS |
+| Dangling wiki-link targets | 0 | 0 | PASS |
 | Average outbound links | ~4.5 | 3.0 | PASS |
 | Hub nodes (5+ links) | 5 | 3+ | PASS |
 | Domains covered | 3/3 | 3/3 | PASS |

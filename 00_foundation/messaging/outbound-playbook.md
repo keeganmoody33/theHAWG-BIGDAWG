@@ -1,7 +1,7 @@
 ---
 title: Outbound Playbook
 type: operational-doc
-status: validated
+status: draft
 source_concepts:
   - "[[icp-segmentation]]"
   - "[[icp-founder-solo]]"

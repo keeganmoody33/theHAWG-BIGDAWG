@@ -1,7 +1,7 @@
 ---
 title: ICP Scoring Engine
 type: operational-doc
-status: validated
+status: emergent
 source_concepts:
   - "[[icp-segmentation]]"
   - "[[icp-founder-solo]]"

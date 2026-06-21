@@ -39,13 +39,14 @@ theHAWG-BIGDAWG/
 │   └── raw_sources/                   # Transcripts, notes, raw input
 │
 ├── 00_foundation/                     # Operational docs that compose from the graph
+│   ├── agent-interface-contract.md   # API/MCP invariants: approval, budget, async, action-packets
 │   ├── positioning/                   # How we position TheHog
-│   │   ├── icp-scoring-engine.md     # Scoring model + weights
+│   │   ├── icp-scoring-engine.md     # Scoring model + weights (emergent — untested)
 │   │   ├── competitive-battlecards.md # vs. ZoomInfo, Apollo, Clay
 │   │   ├── mcp-tooling-guide.md      # MCP setup and agent workflows
 │   │   └── monitor-library.md        # Credit monitoring patterns
 │   ├── messaging/                     # Value props, templates
-│   │   └── outbound-playbook.md      # Email templates per ICP segment
+│   │   └── outbound-playbook.md      # Email templates per ICP segment (draft — untested)
 │   └── _synthesis/                    # Summary documents
 │       └── gtm-context-os-synthesis.md  # The 5% that answers 95%
 │
