@@ -23,11 +23,20 @@ Operating loop: [[sense-orient-act-deposit]] — every task reads state, orients
 
 | Node | Domain | Links | Role |
 |------|--------|-------|------|
-| [[gtm-engineering]] | methodology | 7 | Core thesis — engineering applied to GTM |
-| [[thehog-ai-company]] | business | 5 | The platform powering the experiment |
+| [[gtm-engineering]] | methodology | 8 | Core thesis — engineering applied to GTM |
+| [[thehog-ai-company]] | business | 7 | The platform powering the experiment |
 | [[icp-segmentation]] | business | 6 | How targets are identified and bucketed |
-| [[thehog-ai-api]] | technical | 5 | The technical interface to Hog data |
+| [[thehog-ai-api]] | technical | 6 | The technical interface to Hog data |
 | [[sense-orient-act-deposit]] | methodology | 5 | The operating protocol |
+
+## Founders
+
+| Person | Role | Owns |
+|--------|------|------|
+| [[hudson-liao]] | CEO & Co-founder | GTM strategy, product vision, growth ops |
+| [[paulo-nascimento]] | Co-founder | AI engineering, API architecture, MCP |
+
+YC F25 batch. 2 employees as of last check.
 
 ## ICP Segments
 
@@ -59,4 +68,4 @@ Critical gaps that block progress from Phase 1 → Phase 2:
 ---
 
 **Last updated:** 2026-06-20
-**References:** [[gtm-engineering]] · [[thirty-sixty-ninety-plan]] · [[context-os-architecture]] · [[thehog-ai-company]]
+**References:** [[gtm-engineering]] · [[thirty-sixty-ninety-plan]] · [[context-os-architecture]] · [[thehog-ai-company]] · [[hudson-liao]] · [[paulo-nascimento]]

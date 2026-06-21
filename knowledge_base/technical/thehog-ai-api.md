@@ -23,6 +23,7 @@ related_concepts:
   - "[[mcp-integration]]"
   - "[[hog-api-metering]]"
   - "[[hog-api-search]]"
+  - "[[paulo-nascimento]]"
 source:
   type: document
   file: "Context7 corrections + session breadcrumbs"
@@ -60,6 +61,7 @@ The API follows a metering-first design — every response includes `metering.cr
 - [[hog-api-metering]] - Credit metering model and cost tracking
 - [[hog-api-search]] - Search endpoint patterns and query construction
 - [[mcp-integration]] - Alternative agent-native access via MCP protocol
+- [[paulo-nascimento]] - Co-founder and architect of this API
 
 ---
 

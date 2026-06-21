@@ -25,6 +25,7 @@ related_concepts:
   - "[[thirty-sixty-ninety-plan]]"
   - "[[outbound-playbook]]"
   - "[[hog-api-enrichment]]"
+  - "[[hudson-liao]]"
 source:
   type: document
   file: "README.md + project definition"
@@ -59,6 +60,7 @@ theHAWG-BIGDAWG is a GTM engineering experiment — a 90-day case study proving 
 - [[thirty-sixty-ninety-plan]] - The phased execution timeline
 - [[outbound-playbook]] - The execution layer for outbound campaigns
 - [[hog-api-enrichment]] - The data acquisition workflow
+- [[hudson-liao]] - The operator whose 15 years of GTM experience codified this discipline
 
 ---
 

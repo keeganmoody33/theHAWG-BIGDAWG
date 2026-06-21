@@ -21,8 +21,10 @@ theHAWG-BIGDAWG/
 │   │   ├── hog-api-metering.md       # Credit metering model
 │   │   ├── hog-api-search.md         # Search endpoint patterns
 │   │   └── mcp-integration.md        # MCP agent-native access
-│   ├── business/                      # Company, ICP, segmentation
+│   ├── business/                      # Company, ICP, segmentation, people
 │   │   ├── thehog-ai-company.md      # Company profile + value prop
+│   │   ├── hudson-liao.md             # CEO & Co-founder
+│   │   ├── paulo-nascimento.md        # Co-founder, AI engineering
 │   │   ├── icp-segmentation.md       # Segmentation framework
 │   │   ├── icp-founder-solo.md       # Solo founder segment
 │   │   ├── icp-gtm-engineer.md       # GTM engineer segment
@@ -102,6 +104,7 @@ Foundation docs in `00_foundation/` **compose from** knowledge graph concepts. T
 |-------------------------|------------|
 | What TheHog.ai is | [[thehog-ai-company]] |
 | How the API works | [[thehog-ai-api]] → [[hog-api-enrichment]] → [[hog-api-search]] |
+| Who founded TheHog | [[hudson-liao]] (CEO) + [[paulo-nascimento]] (AI/API) |
 | Who we sell to | [[icp-segmentation]] → segment nodes |
 | How to score accounts | `00_foundation/positioning/icp-scoring-engine.md` |
 | What to send prospects | `00_foundation/messaging/outbound-playbook.md` |

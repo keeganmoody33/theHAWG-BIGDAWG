@@ -23,6 +23,8 @@ related_concepts:
   - "[[mcp-integration]]"
   - "[[hog-api-enrichment]]"
   - "[[icp-scoring-engine]]"
+  - "[[hudson-liao]]"
+  - "[[paulo-nascimento]]"
 source:
   type: document
   file: "README.md + prior session context"
@@ -31,7 +33,7 @@ source:
 
 # TheHog.ai Company
 
-TheHog.ai is an AI-powered data enrichment and prospecting platform designed for Go-to-Market (GTM) teams. It provides programmatic access to company and people data through a REST API and MCP (Model Context Protocol) endpoint, enabling automated lead discovery, enrichment, and scoring workflows.
+TheHog.ai is an AI-powered data enrichment and prospecting platform designed for Go-to-Market (GTM) teams. Founded in 2025 by [[hudson-liao]] and [[paulo-nascimento]], The Hog is a Y Combinator (F25) company. It provides programmatic access to company and people data through a REST API and MCP (Model Context Protocol) endpoint, enabling automated lead discovery, enrichment, and scoring workflows.
 
 The platform differentiates through batch enrichment at scale (up to 100 identifiers per request), async processing with granular status tracking, and metering transparency via `creditsCharged` / `estimatedMaxCredits` fields. It is purpose-built for the [[gtm-engineering]] workflow — engineers who write code to drive pipeline rather than clicking through CRM UIs.
 
@@ -58,6 +60,8 @@ The platform differentiates through batch enrichment at scale (up to 100 identif
 - [[icp-segmentation]] - Core use case: segment and score leads from Hog data
 - [[mcp-integration]] - Agent-native access pattern via MCP protocol
 - [[hog-api-enrichment]] - The enrichment workflow powered by Hog
+- [[hudson-liao]] - CEO & Co-founder, GTM vision
+- [[paulo-nascimento]] - Co-founder, AI & API architecture
 
 ---
 

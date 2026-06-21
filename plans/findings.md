@@ -9,23 +9,23 @@
 
 | Metric | Value | Target | Status |
 |--------|-------|--------|--------|
-| Total knowledge nodes | 14 | — | Baseline |
+| Total knowledge nodes | 17 | — | Baseline (added 2 person nodes) |
 | Total operational docs | 6 | — | Baseline |
 | Orphan nodes | 0 | 0 | PASS |
 | Average outbound links | ~4.5 | 3.0 | PASS |
 | Hub nodes (5+ links) | 5 | 3+ | PASS |
 | Domains covered | 3/3 | 3/3 | PASS |
 | Status: emergent | 3 | — | Need validation |
-| Status: validated | 11 | — | Confirmed |
+| Status: validated | 13 | — | Confirmed |
 
 ## Hub Nodes (Most Connected)
 
 | Node | Domain | Outbound Links | Inbound Links | Total |
 |------|--------|---------------|---------------|-------|
-| [[gtm-engineering]] | methodology | 7 | 8+ | 15+ |
-| [[thehog-ai-company]] | business | 5 | 7+ | 12+ |
+| [[gtm-engineering]] | methodology | 8 | 8+ | 16+ |
+| [[thehog-ai-company]] | business | 7 | 7+ | 14+ |
 | [[icp-segmentation]] | business | 6 | 5+ | 11+ |
-| [[thehog-ai-api]] | technical | 5 | 6+ | 11+ |
+| [[thehog-ai-api]] | technical | 6 | 6+ | 12+ |
 | [[sense-orient-act-deposit]] | methodology | 5 | 5+ | 10+ |
 
 ---
