@@ -1,0 +1,34 @@
+{
+  "answer": {
+    "company_summary": "FullFunnel is a B2B GTM and RevOps services firm that provides 'Revenue Operations as a Service'. They help organizations streamline revenue operations, build GTM systems, run paid digital marketing, and act as a Top 4 global Clay Elite Studio Partner.",
+    "gtm_engineering_motion": "FullFunnel advocates for a centrally orchestrated operating model where RevOps and GTM engineers codify the organization's playbook into workflow tables (using tools like Clay and n8n) that automatically identify, score, enrich, and route accounts. They build multi-source waterfall enrichment workflows rather than relying on a single database.",
+    "likely_pain_points": [
+      "Managing the complexity and maintenance overhead of long enrichment waterfalls",
+      "Dealing with API rate limits and breakages across 150+ providers",
+      "Latency issues when executing live web pulls and multi-step enrichments",
+      "High cumulative costs of using multiple data vendors simultaneously"
+    ],
+    "personalized_angle": "Hi Neeraj, as the Director of GTM Engineering at a top Clay Elite Studio Partner, you've built complex Clay tables and n8n engines. You likely spend a lot of time managing the complexity, latency, and maintenance of multi-provider enrichment waterfalls. TheHog.ai offers an API-first alternative that simplifies this by replacing complex waterfalls with a single, real-time web intelligence API, reducing the maintenance burden on your GTM engineering team while delivering the freshest context across people and companies.",
+    "recent_signals": [
+      "Neeraj Kumar and FullFunnel recently posted about fully automating their content production engine end-to-end using AI and real-time market insights.",
+      "FullFunnel recently published content comparing Clay vs. ZoomInfo and discussing building scalable GTM engines with Clay and n8n."
+    ],
+    "suggested_cta": "Would you be open to testing TheHog.ai's single API to see if it can simplify your n8n workflows and reduce the need for complex Clay waterfall setups?",
+    "tools_mentioned": [
+      "Clay",
+      "ZoomInfo",
+      "Apollo",
+      "n8n",
+      "HubSpot",
+      "ActiveCampaign",
+      "6sense",
+      "Claude Code"
+    ]
+  },
+  "cost": null,
+  "error": null,
+  "finalStatus": "succeeded",
+  "metering": null,
+  "operationId": "2a53a8a5-145c-4bae-811e-6220131139f7",
+  "progress": 100
+}

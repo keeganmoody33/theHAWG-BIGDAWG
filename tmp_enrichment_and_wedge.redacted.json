@@ -1,0 +1,124 @@
+{
+  "enrichment": {},
+  "second_wedge": {
+    "companies": [
+      {
+        "description": "Salesforge is an all-in-one sales execution super app with unlimited mailbox & LinkedIn senders + best AI SDR on the planet",
+        "domain": "salesforge.ai",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Software Development",
+        "location": "Tallinn",
+        "match_score": null,
+        "name": "Salesforge.ai \ud83d\udd25",
+        "signal_summary": null
+      },
+      {
+        "description": "Grow your business with confidence by staying ahead of complex and ever-changing regulatory requirements and online threats. G2 Risk Solutions (G2RS) is the leader in risk and compliance business intelligence for financial institutions...",
+        "domain": "g2risksolutions.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Financial Services",
+        "location": "Burlingame, California",
+        "match_score": null,
+        "name": "G2 Risk Solutions",
+        "signal_summary": null
+      },
+      {
+        "description": "G2 is the world\u2019s largest and most trusted data source on B2B software, helping businesses reach their peak potential...",
+        "domain": "g2.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Technology, Information and Internet",
+        "location": "Chicago, IL",
+        "match_score": null,
+        "name": "G2",
+        "signal_summary": null
+      },
+      {
+        "description": "With almost two decades of technical staffing expertise, g2 Recruitment has expanded into a 250-strong team across 10...",
+        "domain": "g2-recruitment-solutions.linkedin.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Staffing and Recruiting",
+        "location": "Munich, Bavaria",
+        "match_score": null,
+        "name": "g2 Recruitment",
+        "signal_summary": null
+      },
+      {
+        "description": "Reddit is the heart of the internet, where millions gather for conversation and community.",
+        "domain": "bit.ly",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Advertising Services",
+        "location": "San Francisco, CA",
+        "match_score": null,
+        "name": "Reddit for Business",
+        "signal_summary": null
+      },
+      {
+        "description": "Reddit is the heart of the internet, where millions of people get together to talk about any topic imaginable. Share...",
+        "domain": "redditinc.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Social Networking Platforms",
+        "location": "San Francisco, California",
+        "match_score": null,
+        "name": "Reddit, Inc.",
+        "signal_summary": null
+      },
+      {
+        "description": "Authentic Reddit engagement that builds authority and lasting visibility across communities, search, and AI - at scale.",
+        "domain": "theredditmarketingagency.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Advertising Services",
+        "location": "London",
+        "match_score": null,
+        "name": "The Reddit Marketing Agency",
+        "signal_summary": null
+      },
+      {
+        "description": "Qualified, alongside Salesforce, is helping usher B2B marketers into the era of agentic marketing with Piper the AI SDR...",
+        "domain": "qualified.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Software Development",
+        "location": "San Francisco, California",
+        "match_score": null,
+        "name": "Qualified",
+        "signal_summary": null
+      },
+      {
+        "description": "Healthcare AI can\u2019t scale without safety and trust. That\u2019s where we come in.  Qualified Health is the healthcare-native, enterprise AI platform helping health systems deploy safe and scalable AI to drive measurable clinical and financial...",
+        "domain": "qualifiedhealthai.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Hospitals and Health Care",
+        "location": "Palo Alto, California",
+        "match_score": null,
+        "name": "Qualified Health",
+        "signal_summary": null
+      },
+      {
+        "description": "...alignment, while our India-based sourcing specialists efficiently identify top professionals. Qualified Recruiter...",
+        "domain": "qualifiedrecruiter.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "IT Services and IT Consulting",
+        "location": "Marietta, GA",
+        "match_score": null,
+        "name": "Qualified Recruiter, LLC",
+        "signal_summary": null
+      }
+    ],
+    "companyCount": 10,
+    "cost": null,
+    "error": null,
+    "finalStatus": "succeeded",
+    "metering": null,
+    "operationId": "9c2f158e-3bc5-4565-875d-bea5ac42588b",
+    "query": "AI SDR companies"
+  }
+}

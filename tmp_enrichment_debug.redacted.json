@@ -1,0 +1,82 @@
+[
+  {
+    "payload": {
+      "linkedin_url": "https://www.linkedin.com/in/ACwAAAzQiFAB25PvJc7YGnSAtEvf-gkJJsqGQtE",
+      "fields": [
+        "contact.email"
+      ]
+    },
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:44:54.423Z",
+      "requestId": "5512d19d-131b-4602-833b-e991d5c455b3",
+      "errors": [
+        {
+          "property": "",
+          "message": "property linkedin_url should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "payload": {
+      "linkedin_url": "https://www.linkedin.com/in/ACwAAAzQiFAB25PvJc7YGnSAtEvf-gkJJsqGQtE",
+      "fields": [
+        "contact.email",
+        "contact.phone",
+        "signals"
+      ]
+    },
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:44:54.979Z",
+      "requestId": "0a3c7ec5-2bc3-459d-868c-51b4ca29e57e",
+      "errors": [
+        {
+          "property": "",
+          "message": "property linkedin_url should not exist"
+        }
+      ]
+    }
+  },
+  {
+    "payload": {
+      "linkedin_url": "https://www.linkedin.com/in/ACwAAAzQiFAB25PvJc7YGnSAtEvf-gkJJsqGQtE"
+    },
+    "http_status": 400,
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "Validation failed",
+      "path": "/api/enrichments",
+      "timestamp": "2026-06-21T04:44:55.400Z",
+      "requestId": "9e9fc789-9fbe-4db1-97e3-3a2a71efa338",
+      "errors": [
+        {
+          "property": "",
+          "message": "property linkedin_url should not exist"
+        },
+        {
+          "property": "",
+          "message": "each value in fields must be a string"
+        },
+        {
+          "property": "",
+          "message": "fields must contain at least 1 elements"
+        },
+        {
+          "property": "",
+          "message": "fields must be an array"
+        }
+      ]
+    }
+  }
+]

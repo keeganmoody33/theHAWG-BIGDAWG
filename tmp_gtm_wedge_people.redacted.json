@@ -1,0 +1,82 @@
+{
+  "apollo": {
+    "cost": null,
+    "error": null,
+    "finalStatus": "succeeded",
+    "key": "apollo",
+    "metering": null,
+    "operationId": "bf05f9ca-bf84-4342-9b99-4f027e1bf39c",
+    "people": [
+      {
+        "company": {
+          "employeeCount": null,
+          "industry": null,
+          "linkedinUrl": "https://www.linkedin.com/company/18511550",
+          "name": "Apollo.io"
+        },
+        "confidence": null,
+        "department": null,
+        "domain": null,
+        "linkedIn": "https://www.linkedin.com/in/ACwAAAjdMpcB1tZnzH4uVvzazRrAV9LnFJ8fdlw",
+        "name": "Sachin Jha",
+        "seniority": null,
+        "title": "Apollo Solution and Implementation Partner"
+      },
+      {
+        "company": {
+          "employeeCount": null,
+          "industry": null,
+          "linkedinUrl": "https://www.linkedin.com/company/18511550",
+          "name": "Apollo.io"
+        },
+        "confidence": null,
+        "department": null,
+        "domain": null,
+        "linkedIn": "https://www.linkedin.com/in/ACwAABZnhLkBimvfsFUJ3FsBt4WnQAtx6Xb8CbE",
+        "name": "Piotr Dyba",
+        "seniority": null,
+        "title": "Engineering Manager II"
+      }
+    ],
+    "peopleCount": 2,
+    "query": "GTM engineering or Founder or CEO at Apollo.io"
+  },
+  "clay": {
+    "cost": null,
+    "error": null,
+    "finalStatus": "succeeded",
+    "key": "clay",
+    "metering": null,
+    "operationId": "615dd51c-5601-4e9a-85ad-becdc39ee1b3",
+    "people": [],
+    "peopleCount": 0,
+    "query": "GTM engineering or Founder or CEO at Clay"
+  },
+  "fullfunnel": {
+    "cost": null,
+    "error": null,
+    "finalStatus": "succeeded",
+    "key": "fullfunnel",
+    "metering": null,
+    "operationId": "8ebe6718-c5f3-4538-9b40-ddc48a5cd56f",
+    "people": [
+      {
+        "company": {
+          "employeeCount": null,
+          "industry": null,
+          "linkedinUrl": "https://www.linkedin.com/company/10126494",
+          "name": "FullFunnel"
+        },
+        "confidence": null,
+        "department": null,
+        "domain": null,
+        "linkedIn": "https://www.linkedin.com/in/ACwAAAzQiFAB25PvJc7YGnSAtEvf-gkJJsqGQtE",
+        "name": "Neeraj Kumar",
+        "seniority": null,
+        "title": "Director of GTM Engineering"
+      }
+    ],
+    "peopleCount": 1,
+    "query": "GTM RevOps or Founder at FullFunnel"
+  }
+}

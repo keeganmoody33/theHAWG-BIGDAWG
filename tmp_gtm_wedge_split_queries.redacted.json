@@ -1,0 +1,255 @@
+{
+  "gtm_eng_hiring": {
+    "companies": [
+      {
+        "description": "...operating models. Roots in building and exiting startups, applied across private banking and beyond: B2B SaaS, services...",
+        "domain": "linkedin.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Technology, Information and Internet",
+        "location": null,
+        "match_score": null,
+        "name": "Executive Advisor & IT/Product Leader | selective challenges",
+        "signal_summary": null
+      }
+    ],
+    "companyCount": 1,
+    "cost": null,
+    "error": null,
+    "finalStatus": "succeeded",
+    "metering": null,
+    "operationId": "05d448f1-a2c1-45d4-92de-31b41ae50960",
+    "query": "B2B SaaS companies hiring GTM engineering"
+  },
+  "using_apollo": {
+    "companies": [
+      {
+        "description": "Apollo.io is the AI-powered end-to-end go-to-market platform that empowers sales, marketing, and revenue teams to find prospects, engage customers, and close deals with intelligence and efficiency.   Trusted by millions of users and hundreds of thousands of companies worldwide, Apollo uniquely combines the industry's...",
+        "domain": "apollo.io",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Software Development",
+        "location": "San Francisco, California",
+        "match_score": null,
+        "name": "Apollo.io",
+        "signal_summary": null
+      },
+      {
+        "description": "AI that tells your reps exactly what to do next.",
+        "domain": "pocus.linkedin.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Software Development",
+        "location": "San Francisco",
+        "match_score": null,
+        "name": "Pocus (acquired by Apollo.io)",
+        "signal_summary": null
+      },
+      {
+        "description": "Authentic Reddit engagement that builds authority and lasting visibility across communities, search, and AI - at scale.",
+        "domain": "theredditmarketingagency.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Advertising Services",
+        "location": "London",
+        "match_score": null,
+        "name": "The Reddit Marketing Agency",
+        "signal_summary": null
+      },
+      {
+        "description": "Reddit is the heart of the internet, where millions gather for conversation and community.",
+        "domain": "bit.ly",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Advertising Services",
+        "location": "San Francisco, CA",
+        "match_score": null,
+        "name": "Reddit for Business",
+        "signal_summary": null
+      },
+      {
+        "description": "Reddit is the heart of the internet, where millions of people get together to talk about any topic imaginable. Share...",
+        "domain": "redditinc.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Social Networking Platforms",
+        "location": "San Francisco, California",
+        "match_score": null,
+        "name": "Reddit, Inc.",
+        "signal_summary": null
+      },
+      {
+        "description": "G2 is the world\u2019s largest and most trusted data source on B2B software, helping businesses reach their peak potential...",
+        "domain": "g2.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Technology, Information and Internet",
+        "location": "Chicago, IL",
+        "match_score": null,
+        "name": "G2",
+        "signal_summary": null
+      },
+      {
+        "description": "With almost two decades of technical staffing expertise, g2 Recruitment has expanded into a 250-strong team across 10...",
+        "domain": "g2-recruitment-solutions.linkedin.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Staffing and Recruiting",
+        "location": "Munich, Bavaria",
+        "match_score": null,
+        "name": "g2 Recruitment",
+        "signal_summary": null
+      },
+      {
+        "description": "Grow your business with confidence by staying ahead of complex and ever-changing regulatory requirements and online threats. G2 Risk Solutions (G2RS) is the leader in risk and compliance business intelligence for financial institutions...",
+        "domain": "g2risksolutions.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Financial Services",
+        "location": "Burlingame, California",
+        "match_score": null,
+        "name": "G2 Risk Solutions",
+        "signal_summary": null
+      },
+      {
+        "description": "Sumble provides AI-powered account intelligence to drive pipeline for enterprise sales teams.",
+        "domain": "sumble.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Technology, Information and Internet",
+        "location": "San Francisco, CA",
+        "match_score": null,
+        "name": "Sumble",
+        "signal_summary": null
+      }
+    ],
+    "companyCount": 9,
+    "cost": null,
+    "error": null,
+    "finalStatus": "succeeded",
+    "metering": null,
+    "operationId": "b164e31e-3ee9-4fc1-8fb1-2036a80345f5",
+    "query": "companies using Apollo"
+  },
+  "using_clay": {
+    "companies": [
+      {
+        "description": null,
+        "domain": "clay.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Software Development",
+        "location": "New York, NY",
+        "match_score": null,
+        "name": "Clay",
+        "signal_summary": null
+      },
+      {
+        "description": "Clay is an immersive operating system built for real estate development, leasing, and marketing teams...",
+        "domain": "launchclay.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Real Estate",
+        "location": "Washington, D.C,",
+        "match_score": null,
+        "name": "Clay",
+        "signal_summary": null
+      },
+      {
+        "description": "Founded in 1968 by legendary aviator and industry pioneer Clay Lacy. Today, Clay Lacy Aviation is considered the world\u2019s most experienced operator of private jets. Prominent individuals and leading corporations trust Clay Lacy for aircraft...",
+        "domain": "clay-lacy-aviation.linkedin.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Airlines and Aviation",
+        "location": "Van Nuys, California",
+        "match_score": null,
+        "name": "Clay Lacy Aviation",
+        "signal_summary": null
+      },
+      {
+        "description": "...frustrating garden. Heavy clay soil, plants that died over their first winter, and guarantees that were impossible to claim...",
+        "domain": "growproltd.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Software Development",
+        "location": "Huntingdon, Cambridgeshire,",
+        "match_score": null,
+        "name": "Grow Pro Ltd",
+        "signal_summary": null
+      },
+      {
+        "description": "Bloomberry is an AI writing tool that learns your voice and helps you write, schedule, and post on LinkedIn and X consistently.  Most AI content sounds like AI. Bloomberry trains on your writing style, your industry, and your professional...",
+        "domain": "bloomberry.ai",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Technology, Information and Internet",
+        "location": "San Jose, CA",
+        "match_score": null,
+        "name": "Bloomberry",
+        "signal_summary": null
+      },
+      {
+        "description": "Listed on the Philippine Stock Exchange (PSE: BLOOM), Bloomberry Resorts Corporation is a leader in developing world-class destinations, comprising luxurious accommodations, premier gaming facilities, and exceptional dining...",
+        "domain": "bloomberry.ph",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Gambling Facilities and Casinos",
+        "location": "Para\u00f1aque, National Capital Region",
+        "match_score": null,
+        "name": "Bloomberry Resorts Corporation",
+        "signal_summary": null
+      },
+      {
+        "description": "Branding. Reels. Creative strategy. Social media that works.\nWe don\u2019t just manage\u2014we make your brand AWESOME!",
+        "domain": "bloomberryagency.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Advertising Services",
+        "location": "Cluj Napoca",
+        "match_score": null,
+        "name": "Bloomberry Agency",
+        "signal_summary": null
+      },
+      {
+        "description": "FullFunnel is a GTM and RevOps services firm that helps B2B organizations solve their toughest go-to-market and revenue...",
+        "domain": "fullfunnel.co",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Business Consulting and Services",
+        "location": "Boston, MA",
+        "match_score": null,
+        "name": "FullFunnel",
+        "signal_summary": null
+      },
+      {
+        "description": "Making ecommerce revenue engines work harder across traffic, site and automation.",
+        "domain": "gofullfunnel.com",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Business Consulting and Services",
+        "location": null,
+        "match_score": null,
+        "name": "FullFunnel",
+        "signal_summary": null
+      },
+      {
+        "description": "ABM and full-funnel marketing consulting for B2B tech companies with high ACV and long sales cycle",
+        "domain": "fullfunnel.io",
+        "employee_count": null,
+        "growth_band": null,
+        "industry": "Advertising Services",
+        "location": "Tallinn, Harjumaa",
+        "match_score": null,
+        "name": "FullFunnel.io",
+        "signal_summary": null
+      }
+    ],
+    "companyCount": 10,
+    "cost": null,
+    "error": null,
+    "finalStatus": "succeeded",
+    "metering": null,
+    "operationId": "ebb79a78-7694-42de-92fa-8aa74fcfc0da",
+    "query": "companies using Clay"
+  }
+}
