@@ -39,7 +39,7 @@ This is not a process document — it's the fundamental rhythm of how work compo
 - **SENSE** — Check what exists. Query the graph, read hot files, verify current state before acting. Never assume state from memory.
 - **ORIENT** — Find hub nodes (most-connected concepts). Read coordination surfaces. Identify where new work connects to existing knowledge.
 - **ACT** — Create or update content. New nodes start as `emergent`. Execute the task.
-- **DEPOSIT** — Link new work to existing nodes via `[[wiki-links]]`. If you see orphans, link them. Knowledge that isn't linked is lost.
+- **DEPOSIT** — Link new work to existing nodes via wiki-links (e.g. `[[node-name]]`). If you see orphans, link them. Knowledge that isn't linked is lost.
 
 ## Evidence
 

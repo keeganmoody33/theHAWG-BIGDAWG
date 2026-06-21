@@ -1,3 +1,14 @@
+---
+title: Monitor Library
+type: operational-doc
+status: validated
+source_concepts:
+  - "[[hog-api-metering]]"
+  - "[[thehog-ai-api]]"
+  - "[[gtm-engineering]]"
+last_updated: 2026-06-20
+---
+
 # Monitor Library
 
 > Operational doc — composes from [[hog-api-metering]], [[thehog-ai-api]], [[gtm-engineering]]
@@ -15,9 +26,11 @@ Every API response includes metering fields. Monitor these in your enrichment pi
 ```python
 # Pseudocode — credit monitor pattern
 def monitor_credits(response):
-    charged = response["metering"]["creditsCharged"]
-    estimated = response["metering"]["estimatedMaxCredits"]
-    actual_cost = response["meta"]["cost"]["actual"]
+    metering = response.get("metering", {})
+    charged = metering.get("creditsCharged", 0)
+    estimated = metering.get("estimatedMaxCredits", 0)
+    meta_cost = response.get("meta", {}).get("cost", {})
+    actual_cost = meta_cost.get("actual", 0)
     
     # Log for trending
     log_credit_usage(charged, actual_cost)
@@ -54,9 +67,9 @@ def backoff_on_429(attempt):
 
 | Check | Frequency | Method |
 |-------|-----------|--------|
-| API reachability | Every batch start | `GET /api/v1/health` or light search |
+| API reachability | Every batch start | Light `POST /api/v1/search` with `sync=true` and minimal query |
 | Credit balance | Every batch start | Check `metering` in first response |
-| MCP endpoint | Daily | `check_credits` via [[mcp-integration]] |
+| MCP endpoint | Daily | Light search via [[mcp-integration]] |
 | Enrichment quality | Weekly | Sample 10 enriched records, verify completeness |
 
 ---

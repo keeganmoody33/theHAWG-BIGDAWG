@@ -1,3 +1,15 @@
+---
+title: ICP Scoring Engine
+type: operational-doc
+status: validated
+source_concepts:
+  - "[[icp-segmentation]]"
+  - "[[icp-founder-solo]]"
+  - "[[icp-gtm-engineer]]"
+  - "[[icp-revops-head]]"
+last_updated: 2026-06-20
+---
+
 # ICP Scoring Engine
 
 > Operational doc — composes from [[icp-segmentation]], [[icp-founder-solo]], [[icp-gtm-engineer]], [[icp-revops-head]]

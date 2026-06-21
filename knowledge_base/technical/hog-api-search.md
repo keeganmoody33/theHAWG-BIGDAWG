@@ -36,8 +36,9 @@ The primary search flow for [[gtm-engineering]] is: construct an ICP query → `
 
 ## Key Points
 
-- **Company search:** `POST /api/v1/companies/search` — lookup by domain, name, or criteria
-- **General search:** `POST /api/v1/search` — supports `sync=true` for immediate results
+- **Company search:** `POST /api/v1/companies/search` — lookup by domain, name, or criteria (async, returns `202` + `pollUrl`)
+- **People search:** `POST /api/v1/people/search` — contact discovery, optionally scoped to a company
+- **Multi-platform search:** `POST /api/v1/search` — supports `sync=true` for immediate results; types include `web_search`, `x_keyword`, `linkedin_keyword`, `reddit_search`, `tiktok_keyword`
 - **Sync mode:** Pass `sync=true` in request body for blocking response (useful for small queries)
 - **Async mode:** Default — returns job ID, poll for results
 - **Query construction:** Natural language ICP descriptions work (e.g., "Series A B2B SaaS companies using Clay Apollo HubSpot")
@@ -48,8 +49,8 @@ The primary search flow for [[gtm-engineering]] is: construct an ICP query → `
 > POST /api/v1/search can use sync=true
 > [SOURCE: Context7 library data]
 
-> Planned first safe test: POST /api/v1/companies/search for "TheHog.ai" with limit 3
-> [SOURCE: Prior session breadcrumbs]
+> Live API calls confirmed: web_search, x_keyword, linkedin_keyword, people/search, companies/search all returned results.
+> [VERIFIED: Hog API live calls 2026-06-21]
 
 ## How It Relates
 
@@ -61,5 +62,5 @@ The primary search flow for [[gtm-engineering]] is: construct an ICP query → `
 
 ---
 
-**Status:** Validated — endpoint and sync mode confirmed via Context7
-**Next:** Execute first search query to validate response shape and credit usage
+**Status:** Validated — endpoint confirmed via API reference docs + live API calls
+**API calls confirmed working:** `web_search`, `x_keyword`, `linkedin_keyword`, `people/search`, `companies/search`

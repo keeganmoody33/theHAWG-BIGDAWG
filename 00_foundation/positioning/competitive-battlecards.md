@@ -1,3 +1,14 @@
+---
+title: Competitive Battlecards
+type: operational-doc
+status: validated
+source_concepts:
+  - "[[thehog-ai-company]]"
+  - "[[thehog-ai-api]]"
+  - "[[icp-segmentation]]"
+last_updated: 2026-06-20
+---
+
 # Competitive Battlecards
 
 > Operational doc — composes from [[thehog-ai-company]], [[thehog-ai-api]], [[icp-segmentation]]

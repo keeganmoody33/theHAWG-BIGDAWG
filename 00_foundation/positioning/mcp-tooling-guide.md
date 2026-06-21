@@ -1,3 +1,14 @@
+---
+title: MCP Tooling Guide
+type: operational-doc
+status: validated
+source_concepts:
+  - "[[mcp-integration]]"
+  - "[[thehog-ai-api]]"
+  - "[[agent-skill-protocol]]"
+last_updated: 2026-06-20
+---
+
 # MCP Tooling Guide
 
 > Operational doc — composes from [[mcp-integration]], [[thehog-ai-api]], [[agent-skill-protocol]]
@@ -68,9 +79,9 @@ Once connected, agents can discover these tools via the MCP protocol:
 An agent using MCP follows the [[sense-orient-act-deposit]] loop:
 
 ```
-SENSE:  check_credits → verify budget headroom
+SENSE:  search (low-cost query) → verify API connectivity and budget
 ORIENT: search_companies → find targets matching ICP from [[icp-segmentation]]
-ACT:    enrich_batch → get detailed data on top matches
+ACT:    enrich_contact → get detailed data on top matches (batch up to 100)
 DEPOSIT: write scored results to knowledge_base/business/accounts-*.md
 ```
 
@@ -81,8 +92,8 @@ DEPOSIT: write scored results to knowledge_base/business/accounts-*.md
 The [[agent-skill-protocol]] defines how skills invoke MCP tools:
 
 1. Skill fires based on intent (e.g., "find new accounts matching ICP")
-2. SENSE phase: skill calls `check_credits` via MCP
-3. ACT phase: skill calls `search_companies` → `enrich_batch` via MCP
+2. SENSE phase: skill calls `search` (low-cost query) via MCP to verify connectivity
+3. ACT phase: skill calls `search_companies` → `enrich_contact` via MCP
 4. DEPOSIT phase: skill writes results as knowledge nodes with [[wiki-links]]
 
 ---

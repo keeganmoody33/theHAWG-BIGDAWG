@@ -92,11 +92,11 @@ context-os graph-exec --graph knowledge_base '(() => {
 
 **ACT** — New nodes get `status: emergent`. Promote to `validated` with 2+ real-world citations. That's the full lifecycle.
 
-**DEPOSIT** — Link new nodes to existing ones via `[[wiki-links]]`. If you see orphans, link them.
+**DEPOSIT** — Link new nodes to existing ones via wiki-links (e.g. `[[node-name]]`). If you see orphans, link them.
 
 ### Operational Docs
 
-Foundation docs in `00_foundation/` **compose from** knowledge graph concepts. They reference atomic nodes via `[[wiki-links]]`, they don't redefine them.
+Foundation docs in `00_foundation/` **compose from** knowledge graph concepts. They reference atomic nodes via wiki-links (e.g. `[[node-name]]`), they don't redefine them.
 
 ### Quick Navigation
 

@@ -14,9 +14,8 @@ topics:
   - topic-2
   - topic-3
 related_concepts:
-  - "[[related-concept-1]]"
-  - "[[related-concept-2]]"
-  - "[[related-concept-3]]"
+  - "[[REPLACE-WITH-RELATED-CONCEPT]]"
+  # Add 2+ related concepts from existing graph nodes
 source:
   type: transcript|document|notes
   file: "[original filename]"
@@ -40,8 +39,8 @@ Brief explanation of the concept (2-3 paragraphs).
 
 ## How It Relates
 
-- [[related-concept-1]] - Explanation of relationship
-- [[related-concept-2]] - Explanation of relationship
+- Link to related concept 1 - Explanation of relationship
+- Link to related concept 2 - Explanation of relationship
 
 ---
 

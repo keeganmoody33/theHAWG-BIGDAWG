@@ -1,3 +1,16 @@
+---
+title: Outbound Playbook
+type: operational-doc
+status: validated
+source_concepts:
+  - "[[icp-segmentation]]"
+  - "[[icp-founder-solo]]"
+  - "[[icp-gtm-engineer]]"
+  - "[[icp-revops-head]]"
+  - "[[competitive-battlecards]]"
+last_updated: 2026-06-20
+---
+
 # Outbound Playbook
 
 > Operational doc — composes from [[icp-segmentation]], [[icp-founder-solo]], [[icp-gtm-engineer]], [[icp-revops-head]], [[competitive-battlecards]]

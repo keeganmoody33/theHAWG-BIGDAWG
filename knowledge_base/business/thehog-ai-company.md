@@ -44,7 +44,7 @@ The platform differentiates through batch enrichment at scale (up to 100 identif
 
 ## Key Points
 
-- REST API at `api.thehog.ai` with search, enrich, and batch endpoints
+- REST API at `https://developer.thehog.ai` with search, enrich, and batch endpoints (auth: `X-Access-Key` + `X-Secret-Key`)
 - MCP endpoint at `https://mcp.thehog.ai/mcp` for agent-native access
 - Metering model with credit-based pricing and transparent cost fields
 - Supports both sync (`sync=true`) and async enrichment workflows

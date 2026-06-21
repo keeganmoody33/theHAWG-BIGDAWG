@@ -1,3 +1,15 @@
+---
+title: GTM Context OS Synthesis
+type: synthesis-doc
+status: validated
+source_concepts:
+  - "[[gtm-engineering]]"
+  - "[[thehog-ai-company]]"
+  - "[[context-os-architecture]]"
+  - "[[thirty-sixty-ninety-plan]]"
+last_updated: 2026-06-21
+---
+
 # theHAWG-BIGDAWG Context OS Synthesis
 
 > Synthesis doc — the 5% that answers 95% of questions about this system

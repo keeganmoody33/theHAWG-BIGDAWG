@@ -38,7 +38,7 @@
 |---|-----|------|--------|------------|
 | G1 | ~~**No live API data**~~ **RESOLVED 2026-06-21.** Executed web_search, x_keyword, linkedin_keyword, people/search, companies/search. Used API to self-discover and enrich founder profiles. | ~~TRUE GAP~~ RESOLVED | API connectivity confirmed. Person nodes enriched with social links, press, education, Crunchbase data. | Completed |
 | G2 | **Scoring weights untested** — icp-scoring-engine.md weights are theoretical | TRUE GAP | Outbound will target wrong accounts if weights are wrong | Score 25+ real accounts, compare manual ranking vs. algorithmic |
-| G3 | **No account data nodes** — `knowledge_base/business/accounts-*.md` doesn't exist yet | TRUE GAP | No concrete prospect data in the graph | Run first ICP search, deposit results |
+| G3 | ~~**No account data nodes**~~ **PARTIAL 2026-06-21.** `knowledge_base/accounts-gtm-engineering-wedge.md` created with live API data. Remaining segments not yet created. | ~~TRUE GAP~~ PARTIAL | GTM wedge account data deposited; revops and founder segments pending | Run ICP search for remaining segments |
 
 ### Important (Should Fix Before Phase 2)
 
@@ -123,7 +123,7 @@ PROCESS & LEARNINGS (WILL EMERGE)
 1. ~~**Execute safe test API call**~~ → **DONE (2026-06-21)**. Confirmed: web_search, x_keyword, linkedin_keyword, people/search, companies/search all operational.
 2. **Run first ICP search** → 25 accounts for GTM engineering wedge
 3. **Score results** → apply icp-scoring-engine.md weights to real data
-4. **Deposit scored accounts** → create `knowledge_base/business/accounts-gtm-engineering-wedge.md`
+4. **Deposit scored accounts** → `knowledge_base/accounts-gtm-engineering-wedge.md` already created; create remaining segment accounts
 5. **Calibrate scoring weights** → compare algorithmic score vs. manual ranking
 6. **Test MCP endpoint** → verify tool discovery and auth flow
 7. **Select send infrastructure** → evaluate Resend vs. SendGrid vs. Loops
