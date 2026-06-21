@@ -16,6 +16,10 @@
 - Metering/cost fields are still absent from live operation responses; credit tracking likely happens at the organization dashboard level, not per-response.
 - Complex multi-constraint natural-language queries can remain `processing` for many minutes; the current operation `27cea29e-e48b-49f0-9eeb-ca850c79d604` is still pending.
 
+## 2026-06-21
+
+- Groundskeep emphasized that TheHog.ai should be designed as an agent-first API service: agents should navigate and hold the service in their tool bag, while users should mostly set intent and avoid API mechanics. Deposited the synthesis in [[agent-interface-contract]] and linked it from [[thehog-ai-api]] and [[mcp-tooling-guide]].
+
 ## First ingestion queue
 
 - `companies/search` for `TheHog.ai` or `Hog.ai`.

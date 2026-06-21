@@ -36,6 +36,10 @@ Credentials must come from environment variables only. For local MCP, use `THEHO
 
 Non-trivial endpoints return an operation ID and poll URL. Poll `GET /api/operations/:id` until `status` is `succeeded`, `failed`, `partial_success`, or `cancelled`. Treat `402 Payment Required` and `429 Too Many Requests` as stop conditions.
 
+## Agent-first interface invariant
+
+The API/MCP surface is the primary interaction layer for agentic GTM work. Human users should set objectives, constraints, budgets, and approvals; agents should choose endpoints, manage polling, interpret terminal statuses, preserve provenance, and return action-ready outputs.
+
 ## Credit and metering invariant
 
 When present, capture both `metering.creditsCharged` / `metering.estimatedMaxCredits` and `meta.cost.estimated` / `meta.cost.actual`. For deep research, use `maxCredits` or `budget.maxCredits` when spend must be bounded.
@@ -55,3 +59,4 @@ The canonical workflow is:
 - [[thehog-ai-company]]
 - [[mcp-tooling-guide]]
 - [[icp-scoring-engine]]
+- [[agent-interface-contract]]
