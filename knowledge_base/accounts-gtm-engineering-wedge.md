@@ -70,6 +70,16 @@ status: active
 
 - Clay Lacy Aviation, Bloomberry Resorts Corporation, Bloomberry Agency, Grow Pro Ltd, The Reddit Marketing Agency, Reddit for Business, Reddit Inc., g2 Recruitment, G2 Risk Solutions — returned because of keyword collision on “Clay”/“Apollo”/“G2” or unrelated businesses.
 
+### AI SDR / agent-builder wedge (added 2026-06-22, live)
+
+- **Salesforge.ai** (`salesforge.ai`)
+  - Industry: Software Development · Location: Tallinn
+  - Signal: all-in-one AI SDR / sales-execution app. ICP-2 (AI-agent builder) — needs a unified real-time data layer for its agents rather than stitching providers.
+- **AiSDR** (`aisdr.com`)
+  - Industry: Software Development · Location: San Francisco, CA
+  - Signal: AI SDR platform (named a top AI SDR by TechCrunch). ICP-2 — strong fit for The Hog as the agent perception layer.
+- Query: `AI SDR companies` (op `77e03905-9af4-44fe-b650-83a18a3093f1`, `succeeded`). `G2 Risk Solutions` returned as keyword-collision noise.
+
 ## Top 3 priority accounts
 
 1. **FullFunnel** (`fullfunnel.co`) — GTM/RevOps services buyer, likely already paying Clay/Apollo, high intent to consolidate data workflows.
@@ -143,11 +153,19 @@ status: active
 - **Source:** TheHog.ai deep-research API (`POST /api/deep-research`) + TheHog.ai people search (`POST /api/v1/people/search`)
 - **Confidence:** high-moderate (live API data, but no direct contact enrichment yet)
 
+## Enrichment attempt: Neeraj Kumar (2026-06-22)
+
+- **Endpoint:** `POST /api/enrichments`, identifier = his LinkedIn member-URN URL.
+- **Result:** could **not** complete — `402 Payment Required`, `Required: 2736, available: 849`. A prior attempt with `[contact.email, contact.phone, signals]` failed identically (`Required: 2740`).
+- **Interpretation:** the loop reaches research + drafted outbound, but the **verified email is gated by credit balance**, not by a data gap. Cost is dominated by identifier resolution (URN URL), not field count — dropping fields barely moved the price (`2740 → 2736`).
+- **Upside:** the synchronous `402` refused **before** execution and charged nothing, returning exact required/available numbers — the budget-control contract working as designed. (Searches do bill: the balance fell ~1,007→~849 across the run via an intervening `companies/search`; the refused enrichment did not.) See [[hog-api-metering]] and [[agent-interface-contract]].
+- **To complete:** top up credits (≈2,740 needed) or resolve a cheaper identifier (clean vanity LinkedIn URL / email / GitHub) first.
+
 ## Next actions
 
-- Run `enrichment` on Neeraj Kumar to test contact data quality and credit visibility.
+- Top up Hog credits, then re-run `enrichment` on Neeraj Kumar for a verified email (≈2,740 credits).
 - Store the outbound packet in a campaign folder if multi-account sequences are built.
-- Run another `companies/search` for a second wedge (e.g., `AI SDR companies` or `product-led sales platforms`) to expand the account list.
+- Expand the AI-SDR / agent-builder wedge (ICP-2): Salesforge.ai and AiSDR are seeded; run people search on each.
 
 ## Links
 
@@ -155,3 +173,5 @@ status: active
 - [[thehog-ai-company]]
 - [[outbound-playbook]]
 - [[icp-segmentation]]
+- [[hog-api-metering]]
+- [[agent-interface-contract]]

@@ -1,0 +1,19 @@
+{
+  "session": "2026-06-22 delivery-prep live run",
+  "endpoint": "POST /api/enrichments",
+  "identifier": {"linkedin_url": "https://www.linkedin.com/in/<neeraj-kumar-fullfunnel-urn>"},
+  "attempt_1": {
+    "fields": ["contact.email", "contact.phone", "signals"],
+    "operationId": "dec8efec-81ae-4e99-a05e-cd2575e9baed",
+    "final_status": "failed",
+    "progress": 100,
+    "error": {"message": "Insufficient credits. Required: 2740, available: 1007."}
+  },
+  "attempt_2": {
+    "fields": ["contact.email"],
+    "http_status": 402,
+    "error": {"statusCode": 402, "error": "Payment Required", "message": "Insufficient credits. Required: 2736, available: 849."}
+  },
+  "balance_note": "attempt_1 reported available 1007; attempt_2 reported available 849. The ~158-credit drop is NOT from the enrichment (it was refused) — the only intervening successful call was a companies/search, so searches DO consume credits. Attempt_1 was the async path (failed at progress 100); attempt_2 was the synchronous pre-flight 402. The 'no credits deducted' guarantee applies cleanly to the synchronous 402 (refused before execution), not necessarily to the async failed path.",
+  "finding": "Enrichment of this contact requires ~2,740 credits; org balance was ~849-1,007. Reducing requested fields (phone+signals -> email only) barely changed the required cost (2740 -> 2736), so cost is driven by identifier RESOLUTION, not the field set. The synchronous 402 was returned BEFORE execution and charged nothing (matches documented behavior: '402 means insufficient credits and no credits are deducted'). This is the budget-control behavior the agent-interface-contract argues for: typed error + exact required/available numbers + no silent overspend, so an agent can stop gracefully."
+}

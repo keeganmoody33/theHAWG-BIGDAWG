@@ -14,13 +14,16 @@
 - Deep-research on FullFunnel produced a personalized outbound angle and identified FullFunnel as a Top 4 global Clay Elite Studio Partner.
 - First outbound packet is deposited for FullFunnel → Neeraj Kumar.
 - Agent-first API/MCP product direction captured in `00_foundation/agent-interface-contract.md`.
+- **2026-06-22 delivery prep:** repo root decluttered (`tmp_*.json` moved to `knowledge_base/raw_sources/api-scratch/`); `DELIVERY.md` front-door added.
+- **2026-06-22 live run:** `AI SDR companies` search added 2 net-new ICP-2 accounts (Salesforge.ai, AiSDR). Neeraj Kumar enrichment **blocked on credits** (synchronous `402`, required ~2,740, available ~849) — the synchronous `402` refused before execution and charged nothing; documented as a live metering proof point in `[[hog-api-metering]]`. (Note: the balance fell ~1,007→~849 between attempts because an intervening `companies/search` consumed credits — searches do bill; the refused enrichment did not.)
+- **Credential note:** the saved `THEHOG_API_KEY` secret does not authenticate as-is (it omits the access key and contains a single transposed character in the secret key). The correct values were available from the secret's description note and written to a local, gitignored `.env`. The stored secret should be corrected so future sessions authenticate directly. (Exact characters intentionally omitted here.)
 
 ## Next actions
 
-1. Run `enrichment` on Neeraj Kumar to test contact data quality and credit visibility.
-2. Translate the agent-first contract into MCP/API acceptance checks: discoverability, typed errors, budget controls, async polling semantics, and action-packet outputs.
-3. Store the FullFunnel outbound packet in a campaign folder if multi-account sequences are built.
-4. Run another `companies/search` for a second wedge (e.g., `AI SDR companies` or `product-led sales platforms`) to expand the account list.
-5. Continue checking the complex GTM wedge operation `27cea29e-e48b-49f0-9eeb-ca850c79d604` when time permits.
-6. Capture metering and cost in each deposit.
-7. Update `plans/findings.md` with the GTM wedge source and confidence.
+1. Fix the saved `THEHOG_API_KEY` secret so future sessions auth without manual recovery.
+2. Top up Hog credits (~2,740 needed), then re-run `enrichment` on Neeraj Kumar for a verified email; or resolve a cheaper identifier (clean vanity LinkedIn URL / email) first.
+3. Translate the agent-first contract into MCP/API acceptance checks: discoverability, typed errors, budget controls, async polling semantics, and action-packet outputs.
+4. Store the FullFunnel outbound packet in a campaign folder if multi-account sequences are built.
+5. Continue expanding the AI-SDR / agent-builder wedge (Salesforge.ai, AiSDR seeded) with people search.
+6. Continue checking the complex GTM wedge operation `27cea29e-e48b-49f0-9eeb-ca850c79d604` when time permits.
+7. Capture metering and cost in each deposit.

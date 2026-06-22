@@ -1,0 +1,14 @@
+{
+  "session": "2026-06-22 delivery-prep live run",
+  "endpoint": "POST /api/v1/companies/search",
+  "query": "AI SDR companies",
+  "limit": 5,
+  "operationId": "77e03905-9af4-44fe-b650-83a18a3093f1",
+  "final_status": "succeeded",
+  "companies": [
+    {"name": "Salesforge.ai", "domain": "salesforge.ai", "industry": "Software Development", "location": "Tallinn", "linkedinUrl": "https://www.linkedin.com/company/salesforgeai/", "signal": "all-in-one AI SDR / sales execution; ICP-2 AI-agent builder needing unified data layer"},
+    {"name": "AiSDR", "domain": "aisdr.com", "industry": "Software Development", "location": "San Francisco, California", "linkedinUrl": "https://www.linkedin.com/company/aisdrapp/", "signal": "AI SDR platform (TechCrunch top AI SDR); ICP-2 AI-agent builder needing unified data layer"},
+    {"name": "G2 Risk Solutions", "domain": "g2risksolutions.com", "industry": "Financial Services", "location": "Burlingame, California", "signal": "NOISE — keyword collision on 'G2', not relevant"}
+  ],
+  "notes": "2 clean net-new accounts (Salesforge.ai, AiSDR). Single-concept query returned fast and actionable, consistent with prior finding that multi-constraint queries are slower/noisier."
+}
