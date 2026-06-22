@@ -15,8 +15,8 @@
 - First outbound packet is deposited for FullFunnel → Neeraj Kumar.
 - Agent-first API/MCP product direction captured in `00_foundation/agent-interface-contract.md`.
 - **2026-06-22 delivery prep:** repo root decluttered (`tmp_*.json` moved to `knowledge_base/raw_sources/api-scratch/`); `DELIVERY.md` front-door added.
-- **2026-06-22 live run:** `AI SDR companies` search added 2 net-new ICP-2 accounts (Salesforge.ai, AiSDR). Neeraj Kumar enrichment **blocked on credits** (`402`, required ~2,740, available ~849) — no credits deducted; documented as a live metering proof point in `[[hog-api-metering]]`.
-- **Credential note:** the saved `THEHOG_API_KEY` secret is missing the access key and has a transposed secret (`8zW139` vs `8zWi39`); working values were recovered from the secret's note and written to local `.env`.
+- **2026-06-22 live run:** `AI SDR companies` search added 2 net-new ICP-2 accounts (Salesforge.ai, AiSDR). Neeraj Kumar enrichment **blocked on credits** (synchronous `402`, required ~2,740, available ~849) — the synchronous `402` refused before execution and charged nothing; documented as a live metering proof point in `[[hog-api-metering]]`. (Note: the balance fell ~1,007→~849 between attempts because an intervening `companies/search` consumed credits — searches do bill; the refused enrichment did not.)
+- **Credential note:** the saved `THEHOG_API_KEY` secret does not authenticate as-is (it omits the access key and contains a single transposed character in the secret key). The correct values were available from the secret's description note and written to a local, gitignored `.env`. The stored secret should be corrected so future sessions authenticate directly. (Exact characters intentionally omitted here.)
 
 ## Next actions
 

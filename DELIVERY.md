@@ -29,10 +29,12 @@ FullFunnel → Neeraj Kumar").
 ## What I learned about the product (the part most useful to you)
 
 1. **The Hog already behaves like an agent-first API — lean into it.** When I hit the credit ceiling
-   enriching Neeraj, the API returned a typed `402` with *exact* `required: 2736, available: 849` and
-   **deducted nothing**. That's textbook budget-control for autonomous agents. I wrote the product
-   POV up as `00_foundation/agent-interface-contract.md`: humans set goals/budgets/approvals; agents
-   pick endpoints, poll, retry, and return action packets.
+   enriching Neeraj, the **synchronous** `402` returned *exact* `required: 2736, available: 849` and
+   **refused before execution — charging nothing**. (Searches do bill: the balance fell ~1,007→~849
+   across the run from an intervening `companies/search`, but the refused enrichment itself cost
+   nothing.) That pre-flight refusal is textbook budget-control for autonomous agents. I wrote the
+   product POV up as `00_foundation/agent-interface-contract.md`: humans set goals/budgets/approvals;
+   agents pick endpoints, poll, retry, and return action packets.
 
 2. **Enrichment cost is dominated by identifier *resolution*, not fields.** Dropping
    `[email, phone, signals]` → `[email]` moved the price only `2740 → 2736`. A clean identifier
@@ -67,8 +69,9 @@ Full plan in `docs/30-60-90-playbook.md`. In one line each:
 ## What's real vs. what's still open (no overclaiming)
 
 **Real / live:** API auth, company search, people search, deep research, founder-node enrichment via
-self-discovery, the FullFunnel→Neeraj packet, an 18+ node knowledge graph (0 orphans, 0 dangling
-links), the agent-interface POV, and a live `402` metering observation.
+self-discovery, the FullFunnel→Neeraj packet, a 25-node knowledge graph (`knowledge_base/` +
+`00_foundation/`; 0 orphans, 0 dangling links), the agent-interface POV, and a live `402` metering
+observation.
 
 **Open:** Neeraj's *verified email* (gated by credit balance, ~2,740 needed — not a data gap); ICP
 scoring weights are still theoretical until calibrated on real accounts; outbound templates are

@@ -158,7 +158,7 @@ status: active
 - **Endpoint:** `POST /api/enrichments`, identifier = his LinkedIn member-URN URL.
 - **Result:** could **not** complete — `402 Payment Required`, `Required: 2736, available: 849`. A prior attempt with `[contact.email, contact.phone, signals]` failed identically (`Required: 2740`).
 - **Interpretation:** the loop reaches research + drafted outbound, but the **verified email is gated by credit balance**, not by a data gap. Cost is dominated by identifier resolution (URN URL), not field count — dropping fields barely moved the price (`2740 → 2736`).
-- **Upside:** the API refused **before** deducting credits and returned exact required/available numbers — the budget-control contract working as designed. See [[hog-api-metering]] and [[agent-interface-contract]].
+- **Upside:** the synchronous `402` refused **before** execution and charged nothing, returning exact required/available numbers — the budget-control contract working as designed. (Searches do bill: the balance fell ~1,007→~849 across the run via an intervening `companies/search`; the refused enrichment did not.) See [[hog-api-metering]] and [[agent-interface-contract]].
 - **To complete:** top up credits (≈2,740 needed) or resolve a cheaper identifier (clean vanity LinkedIn URL / email / GitHub) first.
 
 ## Next actions
